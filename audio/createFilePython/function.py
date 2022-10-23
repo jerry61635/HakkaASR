@@ -19,4 +19,3 @@ def to_tone(s):
                                 return[c,v+t]
     return 'Error Word'
 
-print(to_tone('dum11'))

@@ -467,7 +467,6 @@ heu55 h eu55
 lab2 l ab2
 kang24 k ang24
 tug5 t ug5
- E r r o r   W o r d
 ham55 h am55
 gon31 g on31
 leb2 l eb2
@@ -1364,7 +1363,6 @@ ta55 t a55
 kab2 k ab2
 bang55 b ang55
 lo55 l o55
-ning11 E r r o r   W o r d
 gio24 g io24
 ke55 k e55
 me11 m e11
@@ -1426,7 +1424,6 @@ guang11 g uang11
 dud2 d ud2
 dui24 d ui24
 dui31 d ui31
-dum11 E r r o r   W o r d
 eb5 eb5
 hem31 h em31
 eb2 eb2
@@ -1441,7 +1438,6 @@ pi31 p i31
 mung31 m ung31
 de11 d e11
 tam55 t am55
-gei31 E r r o r   W o r d
 fung31 f ung31
 qib5 q ib5
 se11 s e11
@@ -1528,7 +1524,6 @@ loi55 l oi55
 moi31 m oi31
 ciim11 c iim11
 nag5 n ag5
-guig2 E r r o r   W o r d
 iai24 i24
 sui55 s ui55
 ne11 n e11

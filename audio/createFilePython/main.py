@@ -6,11 +6,19 @@ import shutil
 Sentence = []
 Lexicon = []
 
+noUse=['lbk01_079','lbk03_132','lbk04_059','lbk10_138']
+
 #開啟檔案 7541為全部檔案數量
 f = open('nameAndText.txt', 'r', encoding='utf-8')
 for i in range(7541):
 # for i in range(10):
-    Sentence.append(f.readline().split('\n')[0])
+    str=f.readline().split('\n')[0]
+    chk=True
+    for w in noUse:
+        if w==str.split(' ')[0]:
+            chk=False
+    if chk:
+        Sentence.append(str)
 f.close
 
 for line in Sentence:
@@ -29,6 +37,17 @@ print('export corpus.txt')
 export = open('output/corpus.txt', 'w', newline='', encoding='utf-8-sig')
 for line in Sentence:
     output=''
+    for word in line.split(' ')[1:]:
+        output = output+' '+word
+    export.write(output[1:]+'\n')
+export.close()
+# shutil.copyfile('./corpus.txt','../../../data/local/corpus.txt')
+
+# export corpus.txt
+print('export text.no_oov')
+export = open('output/text.no_oov', 'w', newline='', encoding='utf-8-sig')
+for line in Sentence:
+    output='<SPOKEN_NOISE>'
     for word in line.split(' ')[1:]:
         output = output+' '+word
     export.write(output[1:]+'\n')
