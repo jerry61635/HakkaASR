@@ -6,7 +6,7 @@ import shutil
 Sentence = []
 Lexicon = []
 
-noUse=['lbk01_079','lbk03_132','lbk04_059','lbk10_138']
+noUse=['lbk13_001','lbk06_053','lbk01_079','lbk03_132','lbk04_059','lbk10_138']
 
 #開啟檔案 7541為全部檔案數量
 f = open('nameAndText.txt', 'r', encoding='utf-8')
@@ -31,6 +31,12 @@ for line in Sentence:
         if wordChk:
             Lexicon.append(word)
 
+'''
+L=0
+for line in Sentence:
+    print(Sentence[L])
+    L+=1
+'''
 
 # export corpus.txt
 print('export corpus.txt')
@@ -41,9 +47,9 @@ for line in Sentence:
         output = output+' '+word
     export.write(output[1:]+'\n')
 export.close()
-# shutil.copyfile('./corpus.txt','../../../data/local/corpus.txt')
+shutil.copyfile('./output/corpus.txt','../../data/local/corpus.txt')
 
-# export corpus.txt
+# export text.no_oov (for lm)
 print('export text.no_oov')
 export = open('output/text.no_oov', 'w', newline='', encoding='utf-8-sig')
 for line in Sentence:
@@ -52,23 +58,32 @@ for line in Sentence:
         output = output+' '+word
     export.write(output[1:]+'\n')
 export.close()
-# shutil.copyfile('./corpus.txt','../../../data/local/corpus.txt')
+shutil.copyfile('./output/text.no_oov','../../data/local/lm/text.no_oov')
 
 # export train/test_text
 p=0.2 #比例
+L=0 #Index
 print('export text_test and text_train')
 export = open('output/text_train', 'w', newline='', encoding='utf-8-sig')
 export2 = open('output/text_test', 'w', newline='', encoding='utf-8-sig')
 for line in Sentence:
     if random.random()>=p:
         export.write(line+'\n')
+        for i in range (4,15):
+            if Sentence[L][i] == ' ':
+                shutil.copyfile('../HakkaAudioFile/'+Sentence[L][0:i]+'.wav','../train/'+Sentence[L][0:i]+'.wav')
+                break
     else:
         export2.write(line+'\n')
-# shutil.copyfile('../ImTong/'+Sentence[L][0]+'.wav','../../train/'+Sentence[L][0]+'.wav')
+        for i in range (4,15):
+            if Sentence[L][i] == ' ':
+                shutil.copyfile('../HakkaAudioFile/'+Sentence[L][0:i]+'.wav','../test/'+Sentence[L][0:i]+'.wav')
+                break
+    L+=1
 export.close()
 export2.close()
-# shutil.copyfile('./text_train','../../../data/train/text')
-# shutil.copyfile('./text_test','../../../data/test/text')
+shutil.copyfile('./output/text_train','../../data/train/text')
+shutil.copyfile('./output/text_test','../../data/test/text')
 
 # export lexicon.txt
 print('export Lexicon')
@@ -79,7 +94,7 @@ for L in Lexicon:
         output=output+' '+syl
     export.write(output+'\n')
 export.close()
-# shutil.copyfile('./lexicon.txt','../../Language/lexicon.txt')
+shutil.copyfile('./output/lexicon.txt','../Language/lexicon.txt')
 
 # export nonsilence_phones.txt
 print('nonsilence_phones.txt')

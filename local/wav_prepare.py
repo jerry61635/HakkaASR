@@ -1,10 +1,10 @@
 import os
 
 with open(f'./data/all/wav.scp', 'w')as file:
-    ls = os.listdir('./audio/0.2.1/ImTong')
+    ls = os.listdir('./audio/HakkaAudioFile')
     ls.sort()
     for audio in ls:
-        abspath = os.path.abspath(f'audio/0.2.1/ImTong/{audio}')
+        abspath = os.path.abspath(f'audio/HakkaAudioFile/{audio}')
         utteranceID = audio[:-4]
         file.write(f'{utteranceID} {abspath}\n')
 

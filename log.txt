@@ -1,0 +1,1101 @@
+./run.sh: Lexicon Preparation
+Dictionary preparation succeeded
+./run.sh: Data Preparation
+Deleting old files
+Preparing wav.scp
+Preparing utt2spk
+./run.sh: Phone Sets, questions, L compilation Preparation
+utils/prepare_lang.sh --position-dependent-phones false data/local/dict <UNK> data/local/lang data/lang
+Checking data/local/dict/silence_phones.txt ...
+--> reading data/local/dict/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/silence_phones.txt is OK
+
+Checking data/local/dict/optional_silence.txt ...
+--> reading data/local/dict/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/optional_silence.txt is OK
+
+Checking data/local/dict/nonsilence_phones.txt ...
+--> reading data/local/dict/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict/lexicon.txt
+--> reading data/local/dict/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexicon.txt is OK
+
+Checking data/local/dict/extra_questions.txt ...
+--> reading data/local/dict/extra_questions.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/extra_questions.txt is OK
+--> SUCCESS [validating dictionary directory data/local/dict]
+
+**Creating data/local/dict/lexiconp.txt from data/local/dict/lexicon.txt
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/lang
+Checking existence of separator file
+separator file data/lang/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 2 entry/entries in data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.int corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.csl corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 242 entry/entries in data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.int corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.csl corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 2 entry/entries in data/lang/phones/silence.txt
+--> data/lang/phones/silence.int corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.csl corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.int corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.csl corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 4 entry/entries in data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.int corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.csl corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 244 entry/entries in data/lang/phones/roots.txt
+--> data/lang/phones/roots.int corresponds to data/lang/phones/roots.txt
+--> data/lang/phones/roots.{txt, int} are OK
+
+Checking data/lang/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 244 entry/entries in data/lang/phones/sets.txt
+--> data/lang/phones/sets.int corresponds to data/lang/phones/sets.txt
+--> data/lang/phones/sets.{txt, int} are OK
+
+Checking data/lang/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 2 entry/entries in data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.int corresponds to data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang/phones/disambig.txt has "#0" and "#1"
+--> data/lang/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word-level disambiguation symbols...
+--> data/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking data/lang/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/oov.txt
+--> data/lang/oov.int corresponds to data/lang/oov.txt
+--> data/lang/oov.{txt, int} are OK
+
+--> data/lang/L.fst is olabel sorted
+--> data/lang/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang]
+./run.sh: LM training
+/home/hcilab1/kaldi/tools/kaldi_lm/train_lm.sh: length of input is 7535 sentences; limiting heldout_sent 
+...  to 1507 (vs. default = 10000)
+Getting raw N-gram counts
+Iteration 1/6 of optimizing discounting parameters
+Alpha value on iter 1 is -0.5
+Iteration 2/6 of optimizing discounting parameters
+Alpha value on iter 2 is 0.528857645928971
+Iteration 3/6 of optimizing discounting parameters
+Alpha value on iter 3 is 0.244408422872528
+Iteration 4/6 of optimizing discounting parameters
+Alpha value on iter 4 is -0.240687178620114
+Iteration 5/6 of optimizing discounting parameters
+Alpha value on iter 5 is 0.239683796984444
+Iteration 6/6 of optimizing discounting parameters
+Alpha value on iter 6 is 0.220678018575833
+Final config is:
+D=0.6 tau=0.45 phi=2
+D=0.607450257103909 tau=0.557857708643 phi=2.22067801857583
+D=0 tau=0.840871705260934 phi=2.24440842287253
+Discounting N-grams.
+Computing final perplexity
+Building ARPA LM (perplexity computation is in background)
+Perplexity over 16776.000000 words is 107.756748
+Perplexity over 16776.000000 words (excluding 0.000000 OOVs) is 107.756748
+107.756748
+Done training LM of type 3gram-mincount
+./run.sh: G compilation, check LG composition
+Converting 'data/local/lm/3gram-mincount/lm_unpruned.gz' to FST
+0.168887 -0.49317
+Succeeded in formatting LM: 'data/local/lm/3gram-mincount/lm_unpruned.gz'
+./run.sh: making mfccs
+steps/make_mfcc_pitch.sh --cmd run.pl --nj 1 data/train exp/make_mfcc/train mfcc
+steps/make_mfcc_pitch.sh: moving data/train/feats.scp to data/train/.backup
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/train
+steps/make_mfcc_pitch.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc_pitch.sh: Succeeded creating MFCC and pitch features for train
+steps/compute_cmvn_stats.sh data/train exp/make_mfcc/train mfcc
+Succeeded creating CMVN stats for train
+fix_data_dir.sh: kept 6033 utterances out of 6034
+fix_data_dir.sh: old files are kept in data/train/.backup
+steps/make_mfcc_pitch.sh --cmd run.pl --nj 1 data/test exp/make_mfcc/test mfcc
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/test
+steps/make_mfcc_pitch.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc_pitch.sh: Succeeded creating MFCC and pitch features for test
+steps/compute_cmvn_stats.sh data/test exp/make_mfcc/test mfcc
+Succeeded creating CMVN stats for test
+utils/fix_data_dir.sh: file data/test/text is not in sorted order or not unique, sorting it
+fix_data_dir.sh: kept 1498 utterances out of 1499
+fix_data_dir.sh: old files are kept in data/test/.backup
+./run.sh: train mono model
+./run.sh: make training subsets
+utils/subset_data_dir.sh: reducing #utt from 6033 to 6033
+steps/train_mono.sh --boost-silence 1.25 --cmd run.pl --nj 1 data/train_mono data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+2530 warnings in exp/mono/log/align.*.*.log
+30 warnings in exp/mono/log/acc.*.*.log
+1627 warnings in exp/mono/log/update.*.log
+exp/mono: nj=1 align prob=-92.76 over 12.40h [retry=0.5%, fail=0.0%] states=736 gauss=978
+steps/train_mono.sh: Done training monophone system in exp/mono
+steps/align_si.sh --boost-silence 1.25 --cmd run.pl --nj 1 data/train data/lang exp/mono exp/mono_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/mono, putting alignments in exp/mono_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+./run.sh: train tri1 model
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 2500 20000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+-0.0338883 -0.0346391
+[info]: LG not stochastic.
+-0.0338883 -0.0346391
+[info]: CLG not stochastic.
+0.000235994 -0.0687228
+HCLGa is not stochastic
+steps/decode.sh --cmd run.pl --mem 24G --config conf/decode.config --nj 1 exp/mono/graph data/test exp/mono/decode_test
+decode.sh: feature type is delta
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 2 with no stats; corresponding phone list: 3 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 98 with no stats; corresponding phone list: 99 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 177 with no stats; corresponding phone list: 178 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 200 with no stats; corresponding phone list: 201 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 226 with no stats; corresponding phone list: 227 
+** The warnings above about 'no stats' generally mean you have phones **
+** (or groups of phones) in your phone set that had no corresponding data. **
+** You should probably figure out whether something went wrong, **
+** or whether your data just doesn't happen to have examples of those **
+** phones. **
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 24G exp/mono/graph exp/mono/decode_test
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode_test/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,5,24) and mean=10.1
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode_test/log/analyze_lattice_depth_stats.log
+steps/score_kaldi.sh --cmd run.pl --mem 24G data/test exp/mono/graph exp/mono/decode_test
+steps/score_kaldi.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/train_deltas.sh: training pass 28
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd run.pl --mem 24G data/test exp/mono/graph exp/mono/decode_test
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh: Done
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+364 warnings in exp/tri1/log/update.*.log
+26 warnings in exp/tri1/log/init_model.log
+115 warnings in exp/tri1/log/align.*.*.log
+1 warnings in exp/tri1/log/build_tree.log
+5 warnings in exp/tri1/log/questions.log
+exp/tri1: nj=1 align prob=-85.91 over 12.40h [retry=0.6%, fail=0.0%] states=2096 gauss=20054 tree-impr=6.43
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+steps/align_si.sh --cmd run.pl --nj 1 data/train data/lang exp/tri1 exp/tri1_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/tri1, putting alignments in exp/tri1_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+./run.sh: train tri2 model
+steps/train_deltas.sh --cmd run.pl 2500 20000 data/train data/lang exp/tri1_ali exp/tri2
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+0 -0.0346391
+[info]: CLG not stochastic.
+steps/train_deltas.sh: building the tree
+0.000479532 -0.0892167
+HCLGa is not stochastic
+steps/decode.sh --cmd run.pl --mem 24G --config conf/decode.config --nj 1 exp/tri1/graph data/test exp/tri1/decode_test
+decode.sh: feature type is delta
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 2 with no stats; corresponding phone list: 3 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 98 with no stats; corresponding phone list: 99 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 177 with no stats; corresponding phone list: 178 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 200 with no stats; corresponding phone list: 201 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 226 with no stats; corresponding phone list: 227 
+** The warnings above about 'no stats' generally mean you have phones **
+** (or groups of phones) in your phone set that had no corresponding data. **
+** You should probably figure out whether something went wrong, **
+** or whether your data just doesn't happen to have examples of those **
+** phones. **
+steps/train_deltas.sh: converting alignments from exp/tri1_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri2
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2/log/analyze_alignments.log
+27 warnings in exp/tri2/log/init_model.log
+5 warnings in exp/tri2/log/questions.log
+123 warnings in exp/tri2/log/align.*.*.log
+1 warnings in exp/tri2/log/build_tree.log
+25 warnings in exp/tri2/log/acc.*.*.log
+344 warnings in exp/tri2/log/update.*.log
+exp/tri2: nj=1 align prob=-85.84 over 12.40h [retry=0.6%, fail=0.0%] states=2144 gauss=20039 tree-impr=6.66
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri2
+steps/align_si.sh --cmd run.pl --nj 1 data/train data/lang exp/tri2 exp/tri2_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/tri2, putting alignments in exp/tri2_ali
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 24G exp/tri1/graph exp/tri1/decode_test
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode_test/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,6) and mean=2.8
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode_test/log/analyze_lattice_depth_stats.log
+steps/score_kaldi.sh --cmd run.pl --mem 24G data/test exp/tri1/graph exp/tri1/decode_test
+steps/score_kaldi.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd run.pl --mem 24G data/test exp/tri1/graph exp/tri1/decode_test
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh: Done
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri2_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+ehB: train tri3 model
+steps/train_lda_mllt.sh --cmd run.pl 2500 20000 data/train data/lang exp/tri2_ali exp/tri3a
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+0.000479532 -0.0891137
+HCLGa is not stochastic
+steps/decode.sh --cmd run.pl --mem 24G --config conf/decode.config --nj 1 exp/tri2/graph data/test exp/tri2/decode_test
+decode.sh: feature type is delta
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 2 with no stats; corresponding phone list: 3 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 98 with no stats; corresponding phone list: 99 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 177 with no stats; corresponding phone list: 178 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 200 with no stats; corresponding phone list: 201 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 226 with no stats; corresponding phone list: 227 
+This is a bad warning.
+steps/train_lda_mllt.sh: Converting alignments from exp/tri2_ali to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 24G exp/tri2/graph exp/tri2/decode_test
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2/decode_test/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,5) and mean=2.6
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2/decode_test/log/analyze_lattice_depth_stats.log
+steps/score_kaldi.sh --cmd run.pl --mem 24G data/test exp/tri2/graph exp/tri2/decode_test
+steps/score_kaldi.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd run.pl --mem 24G data/test exp/tri2/graph exp/tri2/decode_test
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh: Done
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri3a
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3a/log/analyze_alignments.log
+34 warnings in exp/tri3a/log/acc.*.*.log
+341 warnings in exp/tri3a/log/update.*.log
+1 warnings in exp/tri3a/log/lda_acc.*.log
+5 warnings in exp/tri3a/log/questions.log
+147 warnings in exp/tri3a/log/align.*.*.log
+22 warnings in exp/tri3a/log/init_model.log
+1 warnings in exp/tri3a/log/build_tree.log
+exp/tri3a: nj=1 align prob=-40.03 over 12.40h [retry=0.7%, fail=0.0%] states=2168 gauss=20037 tree-impr=6.14 lda-sum=27.34 mllt:impr,logdet=1.67,2.47
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri3a
+./run.sh: train tri4 model
+steps/align_fmllr.sh --cmd run.pl --nj 1 data/train data/lang exp/tri3a exp/tri3a_ali
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+0.000479532 -0.0891977
+HCLGa is not stochastic
+steps/decode.sh --cmd run.pl --mem 24G --nj 1 --config conf/decode.config exp/tri3a/graph data/test exp/tri3a/decode_test
+decode.sh: feature type is lda
+steps/align_fmllr.sh: aligning data in data/train using exp/tri3a/final.mdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri3a_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3a_ali/log/analyze_alignments.log
+43 warnings in exp/tri3a_ali/log/align_pass1.*.log
+41 warnings in exp/tri3a_ali/log/align_pass2.*.log
+1 warnings in exp/tri3a_ali/log/fmllr.*.log
+steps/train_sat.sh --cmd run.pl 2500 20000 data/train data/lang exp/tri3a_ali exp/tri4a
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3a_ali
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 2 with no stats; corresponding phone list: 3 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 98 with no stats; corresponding phone list: 99 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 177 with no stats; corresponding phone list: 178 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 200 with no stats; corresponding phone list: 201 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 226 with no stats; corresponding phone list: 227 
+This is a bad warning.
+steps/train_sat.sh: Converting alignments from exp/tri3a_ali to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 24G exp/tri3a/graph exp/tri3a/decode_test
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3a/decode_test/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,4) and mean=2.1
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3a/decode_test/log/analyze_lattice_depth_stats.log
+steps/score_kaldi.sh --cmd run.pl --mem 24G data/test exp/tri3a/graph exp/tri3a/decode_test
+steps/score_kaldi.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd run.pl --mem 24G data/test exp/tri3a/graph exp/tri3a/decode_test
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh: Done
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri4a
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4a/log/analyze_alignments.log
+34 warnings in exp/tri4a/log/acc.*.*.log
+1 warnings in exp/tri4a/log/build_tree.log
+317 warnings in exp/tri4a/log/update.*.log
+148 warnings in exp/tri4a/log/align.*.*.log
+23 warnings in exp/tri4a/log/init_model.log
+9 warnings in exp/tri4a/log/est_alimdl.log
+5 warnings in exp/tri4a/log/questions.log
+4 warnings in exp/tri4a/log/fmllr.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-49.7524 -49.6459 -49.5515 -48.1755 -46.3357 -45.0954 -44.4829 -44.0032 -43.5147 -42.8234 -42.4576 -42.0987 -41.8428 -41.6392 -41.4358 -41.2474 -41.0756 -40.9203 -40.7751 -40.5098 -40.3216 -40.2065 -40.1021 -39.9999 -39.9026 -39.8055 -39.7153 -39.63 -39.5476 -39.4037 -39.3093 -39.2744 -39.2526 -39.2362 
+exp/tri4a: nj=1 align prob=-40.71 over 12.40h [retry=0.7%, fail=0.0%] states=2168 gauss=20026 fmllr-impr=0.23 over 9.15h tree-impr=9.00
+steps/train_sat.sh: done training SAT system in exp/tri4a
+steps/align_fmllr.sh --cmd run.pl --nj 1 data/train data/lang exp/tri4a exp/tri4a_ali
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train using exp/tri4a/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri4a_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4a_ali/log/analyze_alignments.log
+44 warnings in exp/tri4a_ali/log/align_pass2.*.log
+1 warnings in exp/tri4a_ali/log/fmllr.*.log
+44 warnings in exp/tri4a_ali/log/align_pass1.*.log
+./run.sh: train tri5 model
+steps/train_sat.sh --cmd run.pl 3500 100000 data/train data/lang exp/tri4a_ali exp/tri5a
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri4a_ali
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+0.000479532 -0.0892536
+HCLGa is not stochastic
+steps/decode_fmllr.sh --cmd run.pl --mem 24G --nj 1 --config conf/decode.config exp/tri4a/graph data/test exp/tri4a/decode_test
+steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 1 --cmd run.pl --mem 24G --beam 8.0 --model exp/tri4a/final.alimdl --max-active 2000 exp/tri4a/graph data/test exp/tri4a/decode_test.si
+decode.sh: feature type is lda
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 2 with no stats; corresponding phone list: 3 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 98 with no stats; corresponding phone list: 99 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 177 with no stats; corresponding phone list: 178 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 200 with no stats; corresponding phone list: 201 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 226 with no stats; corresponding phone list: 227 
+This is a bad warning.
+steps/train_sat.sh: Converting alignments from exp/tri4a_ali to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 24G exp/tri4a/graph exp/tri4a/decode_test.si
+Pass 11
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 76.6355140187% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri4a/decode_test.si/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,3) and mean=1.9
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri4a/decode_test.si/log/analyze_lattice_depth_stats.log
+steps/score_kaldi.sh --cmd run.pl --mem 24G data/test exp/tri4a/graph exp/tri4a/decode_test.si
+steps/score_kaldi.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd run.pl --mem 24G data/test exp/tri4a/graph exp/tri4a/decode_test.si
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh: Done
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+Pass 12
+Estimating fMLLR transforms
+steps/decode_fmllr.sh: doing main lattice generation phase
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+Pass 27
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+Pass 28
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 24G exp/tri4a/graph exp/tri4a/decode_test
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 73.564753004% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri4a/decode_test/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,4) and mean=2.0
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri4a/decode_test/log/analyze_lattice_depth_stats.log
+steps/score_kaldi.sh --cmd run.pl --mem 24G data/test exp/tri4a/graph exp/tri4a/decode_test
+steps/score_kaldi.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd run.pl --mem 24G data/test exp/tri4a/graph exp/tri4a/decode_test
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh: Done
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri5a
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri5a/log/analyze_alignments.log
+107 warnings in exp/tri5a/log/align.*.*.log
+27 warnings in exp/tri5a/log/init_model.log
+4 warnings in exp/tri5a/log/fmllr.*.*.log
+1 warnings in exp/tri5a/log/build_tree.log
+34 warnings in exp/tri5a/log/acc.*.*.log
+5 warnings in exp/tri5a/log/questions.log
+1065 warnings in exp/tri5a/log/update.*.log
+32 warnings in exp/tri5a/log/est_alimdl.log
+steps/train_sat.sh: Likelihood evolution:
+-48.8317 -48.783 -48.6789 -47.0217 -45.0417 -43.3428 -42.0793 -41.1975 -40.4823 -39.7754 -39.2694 -38.7837 -38.4171 -38.1185 -37.8434 -37.5891 -37.3507 -37.1197 -36.8969 -36.6106 -36.3518 -36.1549 -35.9656 -35.7837 -35.6065 -35.4333 -35.2634 -35.0998 -34.9385 -34.7655 -34.6491 -34.6037 -34.571 -34.5453 
+exp/tri5a: nj=1 align prob=-36.62 over 12.40h [retry=0.4%, fail=0.0%] states=2976 gauss=100181 fmllr-impr=0.19 over 9.22h tree-impr=9.73
+steps/train_sat.sh: done training SAT system in exp/tri5a
+steps/align_fmllr.sh --cmd run.pl --nj 1 data/train data/lang exp/tri5a exp/tri5a_ali
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train using exp/tri5a/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri5a_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri5a_ali/log/analyze_alignments.log
+1 warnings in exp/tri5a_ali/log/fmllr.*.log
+26 warnings in exp/tri5a_ali/log/align_pass2.*.log
+31 warnings in exp/tri5a_ali/log/align_pass1.*.log
+./run.sh: train chain model
+local/chain/run_tdnn.sh 
+local/nnet3/run_ivector_common.sh: preparing directory for low-resolution speed-perturbed data (for alignment)
+fix_data_dir.sh: kept all 6033 utterances.
+fix_data_dir.sh: old files are kept in data/train/.backup
+utils/data/perturb_data_dir_speed_3way.sh: making sure the utt2dur and the reco2dur files are present
+... in data/train, because obtaining it after speed-perturbing
+... would be very slow, and you might need them.
+utils/data/get_utt2dur.sh: data/train/utt2dur already exists with the expected length.  We won't recompute it.
+utils/data/get_reco2dur.sh: data/train/wav.scp indexed by utt-id; copying utt2dur to reco2dur
+utils/data/perturb_data_dir_speed.sh: generated speed-perturbed version of data in data/train, in data/train_sp_speed0.9
+fix_data_dir.sh: kept all 6033 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp_speed0.9/.backup
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_speed0.9
+utils/data/perturb_data_dir_speed.sh: generated speed-perturbed version of data in data/train, in data/train_sp_speed1.1
+fix_data_dir.sh: kept all 6033 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp_speed1.1/.backup
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_speed1.1
+utils/data/combine_data.sh data/train_sp data/train data/train_sp_speed0.9 data/train_sp_speed1.1
+utils/data/combine_data.sh: combined utt2uniq
+utils/data/combine_data.sh [info]: not combining segments as it does not exist
+utils/data/combine_data.sh: combined utt2spk
+utils/data/combine_data.sh [info]: not combining utt2lang as it does not exist
+utils/data/combine_data.sh: combined utt2dur
+utils/data/combine_data.sh [info]: **not combining utt2num_frames as it does not exist everywhere**
+utils/data/combine_data.sh: combined reco2dur
+utils/data/combine_data.sh [info]: **not combining feats.scp as it does not exist everywhere**
+utils/data/combine_data.sh: combined text
+utils/data/combine_data.sh [info]: **not combining cmvn.scp as it does not exist everywhere**
+utils/data/combine_data.sh [info]: not combining vad.scp as it does not exist
+utils/data/combine_data.sh [info]: not combining reco2file_and_channel as it does not exist
+utils/data/combine_data.sh: combined wav.scp
+utils/data/combine_data.sh [info]: not combining spk2gender as it does not exist
+fix_data_dir.sh: kept all 18099 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp/.backup
+utils/data/perturb_data_dir_speed_3way.sh: generated 3-way speed-perturbed version of data in data/train, in data/train_sp
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp
+local/nnet3/run_ivector_common.sh: making MFCC features for low-resolution speed-perturbed data
+steps/make_mfcc_pitch.sh --cmd run.pl --nj 70 data/train_sp exp/make_mfcc/train_sp mfcc_perturbed
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp
+steps/make_mfcc_pitch.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+0.000479532 -0.0893905
+HCLGa is not stochastic
+steps/decode_fmllr.sh --cmd run.pl --mem 24G --nj 1 --config conf/decode.config exp/tri5a/graph data/test exp/tri5a/decode_test
+steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 1 --cmd run.pl --mem 24G --beam 8.0 --model exp/tri5a/final.alimdl --max-active 2000 exp/tri5a/graph data/test exp/tri5a/decode_test.si
+decode.sh: feature type is lda
+steps/make_mfcc_pitch.sh: Succeeded creating MFCC and pitch features for train_sp
+steps/compute_cmvn_stats.sh data/train_sp exp/make_mfcc/train_sp mfcc_perturbed
+Succeeded creating CMVN stats for train_sp
+fix_data_dir.sh: kept all 18099 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp/.backup
+local/nnet3/run_ivector_common.sh: aligning with the perturbed low-resolution data
+steps/align_fmllr.sh --nj 1 --cmd run.pl data/train_sp data/lang exp/tri5a exp/tri5a_sp_ali
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train_sp using exp/tri5a/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 24G exp/tri5a/graph exp/tri5a/decode_test.si
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri5a/decode_test.si/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,3) and mean=1.8
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri5a/decode_test.si/log/analyze_lattice_depth_stats.log
+steps/score_kaldi.sh --cmd run.pl --mem 24G data/test exp/tri5a/graph exp/tri5a/decode_test.si
+steps/score_kaldi.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd run.pl --mem 24G data/test exp/tri5a/graph exp/tri5a/decode_test.si
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh: Done
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/align_fmllr.sh: doing final alignment.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri5a_sp_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri5a_sp_ali/log/analyze_alignments.log
+225 warnings in exp/tri5a_sp_ali/log/align_pass1.*.log
+6 warnings in exp/tri5a_sp_ali/log/fmllr.*.log
+87 warnings in exp/tri5a_sp_ali/log/align_pass2.*.log
+local/nnet3/run_ivector_common.sh: creating high-resolution MFCC features
+utils/copy_data_dir.sh: copied data from data/train_sp to data/train_sp_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_hires
+utils/copy_data_dir.sh: copied data from data/test to data/test_hires
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+utils/copy_data_dir.sh: copied data from data/train to data/train_hires
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_hires
+utils/data/perturb_data_dir_volume.sh: data/train_sp_hires/feats.scp exists; moving it to data/train_sp_hires/.backup/ as it wouldn't be valid any more.
+utils/data/perturb_data_dir_volume.sh: added volume perturbation to the data in data/train_sp_hires
+steps/make_mfcc_pitch.sh --nj 10 --mfcc-config conf/mfcc_hires.conf --cmd run.pl data/train_sp_hires exp/make_hires/train_sp mfcc_perturbed_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_hires
+steps/make_mfcc_pitch.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc_pitch.sh: Succeeded creating MFCC and pitch features for train_sp_hires
+steps/compute_cmvn_stats.sh data/train_sp_hires exp/make_hires/train_sp mfcc_perturbed_hires
+Succeeded creating CMVN stats for train_sp_hires
+fix_data_dir.sh: kept all 18099 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp_hires/.backup
+utils/copy_data_dir.sh: copied data from data/train_sp_hires to data/train_sp_hires_nopitch
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_hires_nopitch
+utils/data/limit_feature_dim.sh: warning: removing data/train_sp_hires_nopitch/cmvn.cp, you will have to regenerate it from the features.
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_hires_nopitch
+steps/compute_cmvn_stats.sh data/train_sp_hires_nopitch exp/make_hires/train_sp mfcc_perturbed_hires
+Succeeded creating CMVN stats for train_sp_hires_nopitch
+steps/make_mfcc_pitch.sh --nj 10 --mfcc-config conf/mfcc_hires.conf --cmd run.pl data/test_hires exp/make_hires/test mfcc_perturbed_hires
+steps/make_mfcc_pitch.sh: moving data/test_hires/feats.scp to data/test_hires/.backup
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+steps/make_mfcc_pitch.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc_pitch.sh: Succeeded creating MFCC and pitch features for test_hires
+steps/compute_cmvn_stats.sh data/test_hires exp/make_hires/test mfcc_perturbed_hires
+Succeeded creating CMVN stats for test_hires
+fix_data_dir.sh: kept all 1498 utterances.
+fix_data_dir.sh: old files are kept in data/test_hires/.backup
+utils/copy_data_dir.sh: copied data from data/test_hires to data/test_hires_nopitch
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires_nopitch
+utils/data/limit_feature_dim.sh: warning: removing data/test_hires_nopitch/cmvn.cp, you will have to regenerate it from the features.
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires_nopitch
+steps/compute_cmvn_stats.sh data/test_hires_nopitch exp/make_hires/test mfcc_perturbed_hires
+Succeeded creating CMVN stats for test_hires_nopitch
+steps/make_mfcc_pitch.sh --nj 10 --mfcc-config conf/mfcc_hires.conf --cmd run.pl data/train_hires exp/make_hires/train mfcc_perturbed_hires
+steps/make_mfcc_pitch.sh: moving data/train_hires/feats.scp to data/train_hires/.backup
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_hires
+steps/make_mfcc_pitch.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc_pitch.sh: Succeeded creating MFCC and pitch features for train_hires
+steps/compute_cmvn_stats.sh data/train_hires exp/make_hires/train mfcc_perturbed_hires
+Succeeded creating CMVN stats for train_hires
+fix_data_dir.sh: kept all 6033 utterances.
+fix_data_dir.sh: old files are kept in data/train_hires/.backup
+utils/copy_data_dir.sh: copied data from data/train_hires to data/train_hires_nopitch
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_hires_nopitch
+utils/data/limit_feature_dim.sh: warning: removing data/train_hires_nopitch/cmvn.cp, you will have to regenerate it from the features.
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_hires_nopitch
+steps/compute_cmvn_stats.sh data/train_hires_nopitch exp/make_hires/train mfcc_perturbed_hires
+Succeeded creating CMVN stats for train_hires_nopitch
+local/nnet3/run_ivector_common.sh: computing a subset of data to train the diagonal UBM.
+utils/data/subset_data_dir.sh: reducing #utt from 18099 to 4524
+local/nnet3/run_ivector_common.sh: computing a PCA transform from the hires data.
+steps/online/nnet2/get_pca_transform.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 --max-utts 10000 --subsample 2 exp/nnet3/diag_ubm/train_sp_hires_nopitch_subset exp/nnet3/pca_transform
+Done estimating PCA transform in exp/nnet3/pca_transform
+local/nnet3/run_ivector_common.sh: training the diagonal UBM.
+steps/online/nnet2/train_diag_ubm.sh --cmd run.pl --nj 1 --num-frames 700000 exp/nnet3/diag_ubm/train_sp_hires_nopitch_subset 256 exp/nnet3/pca_transform exp/nnet3/diag_ubm
+steps/online/nnet2/train_diag_ubm.sh: Directory exp/nnet3/diag_ubm already exists. Backing up diagonal UBM in exp/nnet3/diag_ubm/backup.CW5
+steps/online/nnet2/train_diag_ubm.sh: initializing model from E-M in memory, 
+steps/online/nnet2/train_diag_ubm.sh: starting from 128 Gaussians, reaching 256;
+steps/online/nnet2/train_diag_ubm.sh: for 20 iterations, using at most 700000 frames of data
+Getting Gaussian-selection info
+steps/online/nnet2/train_diag_ubm.sh: will train for 4 iterations, in parallel over
+steps/online/nnet2/train_diag_ubm.sh: 1 machines, parallelized with 'run.pl'
+steps/online/nnet2/train_diag_ubm.sh: Training pass 0
+steps/online/nnet2/train_diag_ubm.sh: Training pass 1
+steps/online/nnet2/train_diag_ubm.sh: Training pass 2
+steps/online/nnet2/train_diag_ubm.sh: Training pass 3
+local/nnet3/run_ivector_common.sh: training the iVector extractor
+steps/online/nnet2/train_ivector_extractor.sh --cmd run.pl --nj 1 data/train_sp_hires_nopitch exp/nnet3/diag_ubm exp/nnet3/extractor
+steps/online/nnet2/train_ivector_extractor.sh: doing Gaussian selection and posterior computation
+Accumulating stats (pass 0)
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+Summing accs (pass 0)
+Updating model (pass 0)
+Accumulating stats (pass 1)
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 24G exp/tri5a/graph exp/tri5a/decode_test
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 77.7703604806% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri5a/decode_test/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,4) and mean=1.9
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri5a/decode_test/log/analyze_lattice_depth_stats.log
+steps/score_kaldi.sh --cmd run.pl --mem 24G data/test exp/tri5a/graph exp/tri5a/decode_test
+steps/score_kaldi.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd run.pl --mem 24G data/test exp/tri5a/graph exp/tri5a/decode_test
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh: Done
+Summing accs (pass 1)
+Updating model (pass 1)
+Accumulating stats (pass 2)
+Summing accs (pass 2)
+Updating model (pass 2)
+Accumulating stats (pass 3)
+Summing accs (pass 3)
+Updating model (pass 3)
+Accumulating stats (pass 4)
+Summing accs (pass 4)
+Updating model (pass 4)
+Accumulating stats (pass 5)
+Summing accs (pass 5)
+Updating model (pass 5)
+Accumulating stats (pass 6)
+Summing accs (pass 6)
+Updating model (pass 6)
+Accumulating stats (pass 7)
+Summing accs (pass 7)
+Updating model (pass 7)
+Accumulating stats (pass 8)
+Summing accs (pass 8)
+Updating model (pass 8)
+Accumulating stats (pass 9)
+Summing accs (pass 9)
+Updating model (pass 9)
+utils/data/modify_speaker_info.sh: copied data from data/train_sp_hires_nopitch to exp/nnet3/ivectors_train_sp/train_sp_hires_nopitch_max2, number of speakers changed from 3 to 9051
+utils/validate_data_dir.sh: Successfully validated data-directory exp/nnet3/ivectors_train_sp/train_sp_hires_nopitch_max2
+steps/online/nnet2/extract_ivectors_online.sh --cmd run.pl --nj 1 exp/nnet3/ivectors_train_sp/train_sp_hires_nopitch_max2 exp/nnet3/extractor exp/nnet3/ivectors_train_sp
+steps/online/nnet2/extract_ivectors_online.sh: extracting iVectors
+steps/online/nnet2/extract_ivectors_online.sh: combining iVectors across jobs
+steps/online/nnet2/extract_ivectors_online.sh: done extracting (online) iVectors to exp/nnet3/ivectors_train_sp using the extractor in exp/nnet3/extractor.
+steps/online/nnet2/extract_ivectors_online.sh --cmd run.pl --nj 1 data/test_hires_nopitch exp/nnet3/extractor exp/nnet3/ivectors_test
+steps/online/nnet2/extract_ivectors_online.sh: extracting iVectors
+steps/online/nnet2/extract_ivectors_online.sh: combining iVectors across jobs
+steps/online/nnet2/extract_ivectors_online.sh: done extracting (online) iVectors to exp/nnet3/ivectors_test using the extractor in exp/nnet3/extractor.
+steps/online/nnet2/extract_ivectors_online.sh --cmd run.pl --nj 1 data/train_hires_nopitch exp/nnet3/extractor exp/nnet3/ivectors_train
+steps/online/nnet2/extract_ivectors_online.sh: extracting iVectors
+steps/online/nnet2/extract_ivectors_online.sh: combining iVectors across jobs
+steps/online/nnet2/extract_ivectors_online.sh: done extracting (online) iVectors to exp/nnet3/ivectors_train using the extractor in exp/nnet3/extractor.
+steps/align_fmllr_lats.sh --nj 1 --cmd run.pl data/train_sp data/lang exp/tri5a exp/tri5a_sp_lats
+steps/align_fmllr_lats.sh: feature type is lda
+steps/align_fmllr_lats.sh: compiling training graphs
+steps/align_fmllr_lats.sh: aligning data in data/train_sp using exp/tri5a/final.alimdl and speaker-independent features.
+steps/align_fmllr_lats.sh: computing fMLLR transforms
+steps/align_fmllr_lats.sh: generating lattices containing alternate pronunciations.
+steps/align_fmllr_lats.sh: done generating lattices from training transcripts.
+223 warnings in exp/tri5a_sp_lats/log/align_pass1.*.log
+6 warnings in exp/tri5a_sp_lats/log/fmllr.*.log
+steps/nnet3/chain/build_tree.sh --frame-subsampling-factor 3 --context-opts --context-width=2 --central-position=1 --cmd run.pl 7000 data/train_sp data/lang_chain exp/tri5a_sp_ali exp/chain/tri6a_tree_sp
+steps/nnet3/chain/build_tree.sh: feature type is lda
+steps/nnet3/chain/build_tree.sh: Using transforms from exp/tri5a_sp_ali
+steps/nnet3/chain/build_tree.sh: Initializing monophone model (for alignment conversion, in case topology changed)
+steps/nnet3/chain/build_tree.sh: Accumulating tree stats
+steps/nnet3/chain/build_tree.sh: Getting questions for tree clustering.
+steps/nnet3/chain/build_tree.sh: Building the tree
+steps/nnet3/chain/build_tree.sh: Initializing the model
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 2 with no stats; corresponding phone list: 3 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 98 with no stats; corresponding phone list: 99 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 177 with no stats; corresponding phone list: 178 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 200 with no stats; corresponding phone list: 201 
+WARNING (gmm-init-model[5.5.1056~1-f6f4c]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 226 with no stats; corresponding phone list: 227 
+This is a bad warning.
+steps/nnet3/chain/build_tree.sh: Converting alignments from exp/tri5a_sp_ali to use current tree
+steps/nnet3/chain/build_tree.sh: Done building tree
+local/chain/run_tdnn.sh: creating neural net configs using the xconfig parser
+steps/nnet3/chain/train.py --stage -10 --cmd run.pl --mem 24G --feat.online-ivector-dir exp/nnet3/ivectors_train_sp --feat.cmvn-opts --norm-means=false --norm-vars=false --chain.xent-regularize 0.1 --chain.leaky-hmm-coefficient 0.1 --chain.l2-regularize 0.0 --chain.apply-deriv-weights false --chain.lm-opts=--num-extra-lm-states=2000 --trainer.dropout-schedule 0,0@0.20,0.5@0.50,0 --trainer.add-option=--optimization.memory-compression-level=2 --egs.dir  --egs.stage -10 --egs.opts --frames-overlap-per-eg 0 --constrained false --egs.chunk-width 150,110,90 --trainer.num-chunk-per-minibatch 64 --trainer.frames-per-iter 1500000 --trainer.num-epochs 6 --trainer.optimization.num-jobs-initial 1 --trainer.optimization.num-jobs-final 1 --trainer.optimization.initial-effective-lrate 0.00025 --trainer.optimization.final-effective-lrate 0.000025 --trainer.max-param-change 2.0 --cleanup.remove-egs false --feat-dir data/train_sp_hires --tree-dir exp/chain/tri6a_tree_sp --lat-dir exp/tri5a_sp_lats --use-gpu wait --dir exp/chain/tdnn_1d_sp
+['steps/nnet3/chain/train.py', '--stage', '-10', '--cmd', 'run.pl --mem 24G', '--feat.online-ivector-dir', 'exp/nnet3/ivectors_train_sp', '--feat.cmvn-opts', '--norm-means=false --norm-vars=false', '--chain.xent-regularize', '0.1', '--chain.leaky-hmm-coefficient', '0.1', '--chain.l2-regularize', '0.0', '--chain.apply-deriv-weights', 'false', '--chain.lm-opts=--num-extra-lm-states=2000', '--trainer.dropout-schedule', '0,0@0.20,0.5@0.50,0', '--trainer.add-option=--optimization.memory-compression-level=2', '--egs.dir', '', '--egs.stage', '-10', '--egs.opts', '--frames-overlap-per-eg 0 --constrained false', '--egs.chunk-width', '150,110,90', '--trainer.num-chunk-per-minibatch', '64', '--trainer.frames-per-iter', '1500000', '--trainer.num-epochs', '6', '--trainer.optimization.num-jobs-initial', '1', '--trainer.optimization.num-jobs-final', '1', '--trainer.optimization.initial-effective-lrate', '0.00025', '--trainer.optimization.final-effective-lrate', '0.000025', '--trainer.max-param-change', '2.0', '--cleanup.remove-egs', 'false', '--feat-dir', 'data/train_sp_hires', '--tree-dir', 'exp/chain/tri6a_tree_sp', '--lat-dir', 'exp/tri5a_sp_lats', '--use-gpu', 'wait', '--dir', 'exp/chain/tdnn_1d_sp']
+steps/nnet3/chain/get_egs.sh --frames-overlap-per-eg 0 --constrained false --cmd run.pl --mem 24G --cmvn-opts --norm-means=false --norm-vars=false --online-ivector-dir exp/nnet3/ivectors_train_sp --left-context 35 --right-context 35 --left-context-initial -1 --right-context-final -1 --left-tolerance 5 --right-tolerance 5 --frame-subsampling-factor 3 --alignment-subsampling-factor 3 --stage -10 --frames-per-iter 1500000 --frames-per-eg 150,110,90 --srand 0 data/train_sp_hires exp/chain/tdnn_1d_sp exp/tri5a_sp_lats exp/chain/tdnn_1d_sp/egs
+steps/nnet3/chain/get_egs.sh: File data/train_sp_hires/utt2uniq exists, so ensuring the hold-out set includes all perturbed versions of the same source utterance.
+steps/nnet3/chain/get_egs.sh: Holding out 300 utterances in validation set and 300 in training diagnostic set, out of total 18099.
+steps/nnet3/chain/get_egs.sh: creating egs.  To ensure they are not deleted later you can do:  touch exp/chain/tdnn_1d_sp/egs/.nodelete
+steps/nnet3/chain/get_egs.sh: feature type is raw, with 'apply-cmvn'
+steps/nnet3/chain/get_egs.sh: working out number of frames of training data
+steps/nnet3/chain/get_egs.sh: working out feature dim
+steps/nnet3/chain/get_egs.sh: creating 10 archives, each with 15024 egs, with
+steps/nnet3/chain/get_egs.sh:   150,110,90 labels per example, and (left,right) context = (35,35)
+steps/nnet3/chain/get_egs.sh: Getting validation and training subset examples in background.
+steps/nnet3/chain/get_egs.sh: Generating training examples on disk
+steps/nnet3/chain/get_egs.sh: Getting subsets of validation examples for diagnostics and combination.
+steps/nnet3/chain/get_egs.sh: recombining and shuffling order of archives on disk
+steps/nnet3/chain/get_egs.sh: Removing temporary archives, alignments and lattices
+steps/nnet3/chain/get_egs.sh: Finished preparing training examples
+exp/chain/tdnn_1d_sp: num-iters=180 nj=1..1 num-params=18.4M dim=43+100->5472 combine=-0.018->-0.018 (over 10) xent:train/valid[119,179]=(-0.668,-0.541/-0.761,-0.691) logprob:train/valid[119,179]=(-0.025,-0.021/-0.042,-0.040)
+-0.0338883 -0.0346391
+[info]: CLG not stochastic.
+0.168385 -0.0947509
+HCLGa is not stochastic
+0.0806525 -0.0683594
+[info]: final HCLG is not stochastic.
+steps/nnet3/decode.sh --acwt 1.0 --post-decode-acwt 10.0 --nj 1 --cmd run.pl --mem 24G --online-ivector-dir exp/nnet3/ivectors_test exp/chain/tdnn_1d_sp/graph data/test_hires exp/chain/tdnn_1d_sp/decode_test
+steps/nnet3/decode.sh: feature type is raw
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 24G --iter final exp/chain/tdnn_1d_sp/graph exp/chain/tdnn_1d_sp/decode_test
+steps/diagnostic/analyze_lats.sh: see stats in exp/chain/tdnn_1d_sp/decode_test/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,4) and mean=2.4
+steps/diagnostic/analyze_lats.sh: see stats in exp/chain/tdnn_1d_sp/decode_test/log/analyze_lattice_depth_stats.log
+score best paths
+steps/score_kaldi.sh --cmd run.pl --mem 24G data/test_hires exp/chain/tdnn_1d_sp/graph exp/chain/tdnn_1d_sp/decode_test
+steps/score_kaldi.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd run.pl --mem 24G data/test_hires exp/chain/tdnn_1d_sp/graph exp/chain/tdnn_1d_sp/decode_test
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh: Done
+score confidence and timing with sclite
+Decoding done.
+steps/nnet3/decode.sh --acwt 1.0 --post-decode-acwt 10.0 --nj 1 --cmd run.pl --mem 24G --online-ivector-dir exp/nnet3/ivectors_train exp/chain/tdnn_1d_sp/graph data/train_hires exp/chain/tdnn_1d_sp/decode_train
+steps/nnet3/decode.sh: feature type is raw
+steps/diagnostic/analyze_lats.sh --cmd run.pl --mem 24G --iter final exp/chain/tdnn_1d_sp/graph exp/chain/tdnn_1d_sp/decode_train
+steps/diagnostic/analyze_lats.sh: see stats in exp/chain/tdnn_1d_sp/decode_train/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,3) and mean=1.9
+steps/diagnostic/analyze_lats.sh: see stats in exp/chain/tdnn_1d_sp/decode_train/log/analyze_lattice_depth_stats.log
+score best paths
+steps/score_kaldi.sh --cmd run.pl --mem 24G data/train_hires exp/chain/tdnn_1d_sp/graph exp/chain/tdnn_1d_sp/decode_train
+steps/score_kaldi.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd run.pl --mem 24G data/train_hires exp/chain/tdnn_1d_sp/graph exp/chain/tdnn_1d_sp/decode_train
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh: Done
+score confidence and timing with sclite
+Decoding done.
+./run.sh: extract the results
+WER: test
+%WER 21.67 [ 5252 / 24232, 390 ins, 935 del, 3927 sub ] exp/mono/decode_test/wer_17_1.0
+%WER 10.42 [ 2524 / 24232, 416 ins, 241 del, 1867 sub ] exp/tri1/decode_test/wer_17_1.0
+%WER 10.22 [ 2477 / 24232, 475 ins, 207 del, 1795 sub ] exp/tri2/decode_test/wer_17_1.0
+%WER 9.16 [ 2220 / 24232, 389 ins, 165 del, 1666 sub ] exp/tri3a/decode_test/wer_17_1.0
+%WER 9.38 [ 2272 / 24232, 480 ins, 153 del, 1639 sub ] exp/tri4a/decode_test/wer_17_1.0
+%WER 9.76 [ 2364 / 24232, 471 ins, 155 del, 1738 sub ] exp/tri4a/decode_test.si/wer_17_1.0
+%WER 10.42 [ 2526 / 24232, 498 ins, 204 del, 1824 sub ] exp/tri5a/decode_test/wer_17_1.0
+%WER 11.26 [ 2728 / 24232, 515 ins, 211 del, 2002 sub ] exp/tri5a/decode_test.si/wer_17_1.0
+%WER 2.63 [ 638 / 24232, 23 ins, 169 del, 446 sub ] exp/chain/tdnn_1d_sp/decode_test/wer_16_0.0
+
+CER: test
+%WER 12.60 [ 14169 / 112486, 3337 ins, 4385 del, 6447 sub ] exp/mono/decode_test/cer_17_0.5
+%WER 5.49 [ 6176 / 112486, 2120 ins, 1239 del, 2817 sub ] exp/tri1/decode_test/cer_17_1.0
+%WER 5.41 [ 6085 / 112486, 2292 ins, 1099 del, 2694 sub ] exp/tri2/decode_test/cer_17_1.0
+%WER 4.68 [ 5268 / 112486, 1926 ins, 929 del, 2413 sub ] exp/tri3a/decode_test/cer_17_1.0
+%WER 4.92 [ 5534 / 112486, 2256 ins, 886 del, 2392 sub ] exp/tri4a/decode_test/cer_17_1.0
+%WER 5.07 [ 5700 / 112486, 2242 ins, 923 del, 2535 sub ] exp/tri4a/decode_test.si/cer_17_1.0
+%WER 5.44 [ 6117 / 112486, 2405 ins, 1097 del, 2615 sub ] exp/tri5a/decode_test/cer_17_1.0
+%WER 5.80 [ 6529 / 112486, 2485 ins, 1202 del, 2842 sub ] exp/tri5a/decode_test.si/cer_17_1.0
+%WER 1.40 [ 1577 / 112486, 191 ins, 649 del, 737 sub ] exp/chain/tdnn_1d_sp/decode_test/cer_12_0.0
+
+WER: train
+%WER 0.68 [ 682 / 99926, 23 ins, 186 del, 473 sub ] exp/chain/tdnn_1d_sp/decode_train/wer_7_0.0
+
+CER: train
+%WER 0.46 [ 2130 / 463566, 150 ins, 1349 del, 631 sub ] exp/chain/tdnn_1d_sp/decode_train/cer_7_0.0
+
+./run.sh: all done

@@ -9,15 +9,19 @@ rm data/test/utt2num_frames
 rm data/train/utt2num_frames
 rm data/train/reco2dur
 rm data/train_sp/feats.scp
+rm data/test/cmvn.scp
+rm data/train/cmvn.scp
 
 echo 'Preparing wav.scp'
-python3 wav_prepare.py
+python3 local/wav_prepare.py
 
 echo 'Preparing utt2spk'
-python3 utt2spk_prepare.py
+python3 local/utt2spk_prepare.py
 
-echo 'Copying text & lexicon.txt'
-cp audio/0.2.1/createLexicon/text_test data/test/text
-cp audio/0.2.1/createLexicon/text_train data/test/train
 
-cp audio/0.2.1/createLexicon/lexicon.txt audio/Language
+#echo 'Copying text & lexicon.txt'
+#cp audio/0.2.1/createLexicon/text_test data/test/text
+#cp audio/0.2.1/createLexicon/text_train data/test/train
+
+#cp audio/0.2.1/createLexicon/lexicon.txt audio/Language
+

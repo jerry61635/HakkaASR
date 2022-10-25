@@ -12,7 +12,7 @@
 # JHU cluster (or most clusters using GridEngine, with a suitable
 # conf/queue.conf).
 export train_cmd="run.pl"
-export decode_cmd="run.pl --mem 4G"
+export decode_cmd="run.pl --mem 24G"
 
 #host=$(hostname -f)
 #if [ ${host#*.} == "fit.vutbr.cz" ]; then

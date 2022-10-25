@@ -15,6 +15,7 @@ eval_dir=audio/test
 # shell options
 set -eo pipefail
 
+. ./path.sh
 . ./cmd.sh
 . ./utils/parse_options.sh
 
@@ -37,14 +38,8 @@ if [ $stage -le -2 ]; then
   echo "$0: Phone Sets, questions, L compilation Preparation"
   rm -rf data/lang
   utils/prepare_lang.sh --position-dependent-phones false data/local/dict \
-      "<SIL>" data/local/lang data/lang || exit 1;
+      "<UNK>" data/local/lang data/lang || exit 1;
   
-  #LM training
-  echo "$0: LM training"
-  rm -rf data/local/lm
-  local/lm/train_lm.sh data/local \
-  data/local/lm/norm/tmp data/local/lm/norm/norm_texts data/local/lm|| exit 1;
-: '
   # LM training
   echo "$0: LM training"
   rm -rf data/local/lm/3gram-mincount
@@ -54,7 +49,7 @@ if [ $stage -le -2 ]; then
   echo "$0: G compilation, check LG composition"
   utils/format_lm.sh data/lang data/local/lm/3gram-mincount/lm_unpruned.gz \
       data/local/dict/lexicon.txt data/lang_test || exit 1;
-'
+
 
 fi
 

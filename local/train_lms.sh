@@ -29,9 +29,9 @@ fi
 
 cleantext=$dir/text.no_oov
 
-cat $text | awk -v lex=$lexicon 'BEGIN{while((getline<lex) >0){ seen[$1]=1; } }
-  {for(n=1; n<=NF;n++) {  if (seen[$n]) { printf("%s ", $n); } else {printf("<SIL> ");} } printf("\n");}' \
-  > $cleantext || exit 1;
+#cat $text | awk -v lex=$lexicon 'BEGIN{while((getline<lex) >0){ seen[$1]=1; } }
+#  {for(n=1; n<=NF;n++) {  if (seen[$n]) { printf("%s ", $n); } else {printf("<SIL> ");} } printf("\n");}' \
+#  > $cleantext || exit 1;
 
 cat $cleantext | awk '{for(n=2;n<=NF;n++) print $n; }' | sort | uniq -c | \
    sort -nr > $dir/word.counts || exit 1;
