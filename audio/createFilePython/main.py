@@ -61,7 +61,7 @@ export.close()
 shutil.copyfile('./output/text.no_oov','../../data/local/lm/text.no_oov')
 
 # export train/test_text
-p=0.2 #比例
+p=0.4 #比例
 L=0 #Index
 print('export text_test and text_train')
 export = open('output/text_train', 'w', newline='', encoding='utf-8-sig')

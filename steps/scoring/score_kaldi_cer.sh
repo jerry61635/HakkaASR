@@ -122,21 +122,22 @@ if [ $stage -le 2 ] ; then
     if [ -x local/character_tokenizer ]; then
       cat $f |  local/character_tokenizer > $fout
     else
-      cat $f |  perl -CSDA -ane '
-        {
-          print $F[0];
-          foreach $s (@F[1..$#F]) {
-            if (($s =~ /\[.*\]/) || ($s =~ /\<.*\>/) || ($s =~ "!SIL")) {
-              print " $s";
-            } else {
-              @chars = split "", $s;
-              foreach $c (@chars) {
-                print " $c";
-              }
-            }
-          }
-          print "\n";
-        }' > $fout
+#      cat $f |  perl -CSDA -ane '
+#        {
+#          print $F[0];
+#          foreach $s (@F[1..$#F]) {
+#            if (($s =~ /\[.*\]/) || ($s =~ /\<.*\>/) || ($s =~ "!SIL")) {
+#              print " $s";
+#            } else {
+#              @chars = split "", $s;
+#              foreach $c (@chars) {
+#                print " $c";
+#              }
+#            }
+#          }
+#          print "\n";
+#        }' > $fout
+      python3 steps/scoring/func.py $f > $fout
     fi
   done
 

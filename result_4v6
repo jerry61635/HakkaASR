@@ -1,0 +1,30 @@
+./run.sh: extract the results
+WER: test
+%WER 19.99 [ 9730 / 48666, 974 ins, 821 del, 7935 sub ] exp/mono/decode_test/wer_17_1.0
+%WER 11.48 [ 5585 / 48666, 1204 ins, 395 del, 3986 sub ] exp/tri1/decode_test/wer_17_1.0
+%WER 11.11 [ 5408 / 48666, 1074 ins, 416 del, 3918 sub ] exp/tri2/decode_test/wer_17_1.0
+%WER 9.54 [ 4643 / 48666, 811 ins, 341 del, 3491 sub ] exp/tri3a/decode_test/wer_17_1.0
+%WER 9.54 [ 4643 / 48666, 988 ins, 277 del, 3378 sub ] exp/tri4a/decode_test/wer_17_1.0
+%WER 10.22 [ 4972 / 48666, 1052 ins, 274 del, 3646 sub ] exp/tri4a/decode_test.si/wer_17_1.0
+%WER 11.16 [ 5432 / 48666, 1072 ins, 465 del, 3895 sub ] exp/tri5a/decode_test/wer_17_1.0
+%WER 12.28 [ 5975 / 48666, 1074 ins, 588 del, 4313 sub ] exp/tri5a/decode_test.si/wer_17_1.0
+%WER 3.18 [ 1547 / 48666, 55 ins, 394 del, 1098 sub ] exp/chain/tdnn_1d_sp/decode_test/wer_15_0.0
+
+CER: test
+%WER 10.97 [ 24778 / 225850, 7182 ins, 4926 del, 12670 sub ] exp/mono/decode_test/cer_17_1.0
+%WER 6.19 [ 13970 / 225850, 5638 ins, 2317 del, 6015 sub ] exp/tri1/decode_test/cer_17_1.0
+%WER 5.96 [ 13453 / 225850, 5129 ins, 2447 del, 5877 sub ] exp/tri2/decode_test/cer_17_1.0
+%WER 4.90 [ 11066 / 225850, 3956 ins, 2000 del, 5110 sub ] exp/tri3a/decode_test/cer_17_1.0
+%WER 5.01 [ 11325 / 225850, 4783 ins, 1684 del, 4858 sub ] exp/tri4a/decode_test/cer_17_1.0
+%WER 5.36 [ 12105 / 225850, 5077 ins, 1732 del, 5296 sub ] exp/tri4a/decode_test.si/cer_17_1.0
+%WER 5.85 [ 13201 / 225850, 4892 ins, 2615 del, 5694 sub ] exp/tri5a/decode_test/cer_17_1.0
+%WER 6.48 [ 14637 / 225850, 5033 ins, 3251 del, 6353 sub ] exp/tri5a/decode_test.si/cer_17_1.0
+%WER 1.66 [ 3757 / 225850, 485 ins, 1474 del, 1798 sub ] exp/chain/tdnn_1d_sp/decode_test/cer_11_0.0
+
+WER: train
+%WER 0.74 [ 560 / 75494, 22 ins, 229 del, 309 sub ] exp/chain/tdnn_1d_sp/decode_train/wer_9_0.0
+
+CER: train
+%WER 0.53 [ 1873 / 350200, 142 ins, 1254 del, 477 sub ] exp/chain/tdnn_1d_sp/decode_train/cer_7_0.0
+
+./run.sh: all done
