@@ -1,0 +1,5 @@
+SPEAKER         id       #SENT      #WORD       Corr        Sub        Ins        Del        Err      S.Err
+Speaker1        raw          5         95         91          0          1          4          5          4
+Speaker1        sys          5         95      95.79       0.00       1.05       4.21       5.26      80.00
+SUM             raw          5         95         91          0          1          4          5          4
+SUM             sys          5         95      95.79       0.00       1.05       4.21       5.26      80.00

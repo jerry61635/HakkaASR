@@ -1,138 +1,157 @@
 #!/usr/bin/env bash
 
-# mono
-echo "$0: train mono model"
-# Make some small data subsets for early system-build stages.
-echo "$0: make training subsets"
-utils/subset_data_dir.sh --shortest data/train $(wc -l < data/train/text) data/train_mono
+# Copyright 2014  Johns Hopkins University (Author: Daniel Povey)
+#           2016  Api.ai (Author: Ilya Platonov)
+# Apache 2.0
 
-# train mono
-steps/train_mono.sh --boost-silence 1.25 --cmd "$train_cmd" --nj $num_jobs \
-data/train_mono data/lang exp/mono || exit 1;
+# Begin configuration section.
+stage=0
+nj=1
+cmd=run.pl
+frames_per_chunk=20
+extra_left_context_initial=0
+min_active=200
+max_active=7000
+beam=15.0
+lattice_beam=6.0
+acwt=0.1   # note: only really affects adaptation and pruning (scoring is on
+           # lattices).
+post_decode_acwt=1.0  # can be used in 'chain' systems to scale acoustics by 10 so the
+                      # regular scoring script works.
+per_utt=false
+online=true  # only relevant to non-threaded decoder.
+do_endpointing=false
+do_speex_compressing=false
+scoring_opts=
+skip_scoring=false
+silence_weight=1.0  # set this to a value less than 1 (e.g. 0) to enable silence weighting.
+max_state_duration=40 # This only has an effect if you are doing silence
+  # weighting.  This default is probably reasonable.  transition-ids repeated
+  # more than this many times in an alignment are treated as silence.
+iter=final
+online_config=
+decode_dir=online/work
+# End configuration section.
 
-# Get alignments from monophone system.
-steps/align_si.sh --boost-silence 1.25 --cmd "$train_cmd" --nj $num_jobs \
-data/train data/lang exp/mono exp/mono_ali || exit 1;
+#以此執行bash >> ./decode.sh exp/chain/tdnn_1d_sp/graph/ data/train online/work
 
-# Monophone decoding
-(
-utils/mkgraph.sh data/lang_test exp/mono exp/mono/graph || exit 1;
-steps/decode.sh --cmd "$decode_cmd" --config conf/decode.config --nj $num_jobs \
-exp/mono/graph data/test exp/mono/decode_test
-)&
+echo "$0 $@"  # Print the command line for logging
 
-# tri1
-echo "$0: train tri1 model"
-# train tri1 [first triphone pass]
-steps/train_deltas.sh --boost-silence 1.25 --cmd "$train_cmd" \
-2500 20000 data/train data/lang exp/mono_ali exp/tri1 || exit 1;
+[ -f ./path.sh ] && . ./path.sh; # source the path.
+. parse_options.sh || exit 1;
 
-# align tri1
-steps/align_si.sh --cmd "$train_cmd" --nj $num_jobs \
-data/train data/lang exp/tri1 exp/tri1_ali || exit 1;
-
-# decode tri1
-(
-utils/mkgraph.sh data/lang_test exp/tri1 exp/tri1/graph || exit 1;
-steps/decode.sh --cmd "$decode_cmd" --config conf/decode.config --nj $num_jobs \
-exp/tri1/graph data/test exp/tri1/decode_test
-)&
-
-# tri2
-echo "$0: train tri2 model"
-# train tri2 [delta+delta-deltas]
-steps/train_deltas.sh --cmd "$train_cmd" \
-2500 20000 data/train data/lang exp/tri1_ali exp/tri2 || exit 1;
-
-# align tri2b
-steps/align_si.sh --cmd "$train_cmd" --nj $num_jobs \
-data/train data/lang exp/tri2 exp/tri2_ali || exit 1;
-
-# decode tri2
-(
-utils/mkgraph.sh data/lang_test exp/tri2 exp/tri2/graph
-steps/decode.sh --cmd "$decode_cmd" --config conf/decode.config --nj $num_jobs \
-exp/tri2/graph data/test exp/tri2/decode_test
-  )&
-
-# tri3a
-echo "$-: train tri3 model"
-# Train tri3a, which is LDA+MLLT,
-steps/train_lda_mllt.sh --cmd "$train_cmd" \
-2500 20000 data/train data/lang exp/tri2_ali exp/tri3a || exit 1;
-
-# decode tri3a
-(
-utils/mkgraph.sh data/lang_test exp/tri3a exp/tri3a/graph || exit 1;
-steps/decode.sh --cmd "$decode_cmd" --nj $num_jobs --config conf/decode.config \
-exp/tri3a/graph data/test exp/tri3a/decode_test
-)&
-
-# tri4
-echo "$0: train tri4 model"
-# From now, we start building a more serious system (with SAT), and we'll
-# do the alignment with fMLLR.
-steps/align_fmllr.sh --cmd "$train_cmd" --nj $num_jobs \
-data/train data/lang exp/tri3a exp/tri3a_ali || exit 1;
-
-steps/train_sat.sh --cmd "$train_cmd" \
-2500 20000 data/train data/lang exp/tri3a_ali exp/tri4a || exit 1;
-
-# align tri4a
-steps/align_fmllr.sh  --cmd "$train_cmd" --nj $num_jobs \
-data/train data/lang exp/tri4a exp/tri4a_ali
-
-# decode tri4a
-(
-utils/mkgraph.sh data/lang_test exp/tri4a exp/tri4a/graph
-steps/decode_fmllr.sh --cmd "$decode_cmd" --nj $num_jobs --config conf/decode.config \
-exp/tri4a/graph data/test exp/tri4a/decode_test
-)&
-
-# tri5
-echo "$0: train tri5 model"
-# Building a larger SAT system.
-steps/train_sat.sh --cmd "$train_cmd" \
-3500 100000 data/train data/lang exp/tri4a_ali exp/tri5a || exit 1;
-
-# align tri5a
-steps/align_fmllr.sh --cmd "$train_cmd" --nj $num_jobs \
-data/train data/lang exp/tri5a exp/tri5a_ali || exit 1;
-
-# decode tri5
-(
-utils/mkgraph.sh data/lang_test exp/tri5a exp/tri5a/graph || exit 1;
-steps/decode_fmllr.sh --cmd "$decode_cmd" --nj $num_jobs --config conf/decode.config \
-    exp/tri5a/graph data/test exp/tri5a/decode_test || exit 1;
-)&
-
-# nnet3 tdnn models
-# commented out by default, since the chain model is usually faster and better
-#if [ $stage -le 6 ]; then
-  # echo "$0: train nnet3 model"
-  # local/nnet3/run_tdnn.sh
-#fi
-
-# chain model
-# The iVector-extraction and feature-dumping parts coulb be skipped by setting "--train_stage 7"
-echo "$0: train chain model"
-local/chain/run_tdnn.sh
-
-# getting results (see RESULTS file)
-echo "$0: extract the results"
-for test_set in test train; do
-echo "WER: $test_set"
-for x in exp/*/decode_${test_set}*; do [ -d $x ] && grep WER $x/wer_* | utils/best_wer.sh; done 2>/dev/null
-for x in exp/*/*/decode_${test_set}*; do [ -d $x ] && grep WER $x/wer_* | utils/best_wer.sh; done 2>/dev/null
-echo
-
-echo "CER: $test_set"
-for x in exp/*/decode_${test_set}*; do [ -d $x ] && grep WER $x/cer_* | utils/best_wer.sh; done 2>/dev/null
-for x in exp/*/*/decode_${test_set}*; do [ -d $x ] && grep WER $x/cer_* | utils/best_wer.sh; done 2>/dev/null
-echo
+echo "Prepare online decode settings and data"
+./online_prepare.sh
+rm $decode_dir/input.scp $decode_dir/spk2utt
+mkdir -p $decode_dir
+# make an input .scp file
+> $decode_dir/input.scp
+for f in online/online-data/audio/*.wav; do
+    bf=`basename $f`
+    bf=${bf%.wav}
+    echo $bf $f >> $decode_dir/input.scp
+    echo $bf $bf >> $decode_dir/spk2utt
 done
 
-# finish
-echo "$0: all done"
+if [ $# != 3 ]; then
+   echo "Usage: $0 [options] <graph-dir> <data-dir> <decode-dir>"
+   echo "... where <decode-dir> is assumed to be a sub-directory of the directory"
+   echo " where the models are, as prepared by steps/online/nnet3/prepare_online_decoding.sh"
+   echo "e.g.: $0 exp/chain/tdnn/graph data/test exp/chain/tdnn_online/decode/"
+   echo ""
+   echo ""
+   echo "main options (for others, see top of script file)"
+   echo "  --config <config-file>                           # config containing options"
+   echo "  --online-config <config-file>                    # online decoder options"
+   echo "  --nj <nj>                                        # number of parallel jobs"
+   echo "  --cmd (utils/run.pl|utils/queue.pl <queue opts>) # how to run jobs."
+   echo "  --acwt <float>                                   # acoustic scale used for lattice generation "
+   echo "  --per-utt <true|false>                           # If true, decode per utterance without"
+   echo "                                                   # carrying forward adaptation info from previous"
+   echo "                                                   # utterances of each speaker.  Default: false"
+   echo "  --online <true|false>                            # Set this to false if you don't really care about"
+   echo "                                                   # simulating online decoding and just want the best"
+   echo "                                                   # results.  This will use all the data within each"
+   echo "                                                   # utterance (plus any previous utterance, if not in"
+   echo "                                                   # per-utterance mode) to estimate the iVectors."
+   echo "  --scoring-opts <string>                          # options to local/score.sh"
+   echo "  --iter <iter>                                    # Iteration of model to decode; default is final."
+   exit 1;
+fi
+
+
+graphdir=$1
+data=$2
+dir=$3
+srcdir=`dirname $dir`; # The model directory is one level up from decoding directory.
+sdata=$data/split$nj;
+
+if [ "$online_config" == "" ]; then
+  online_config=$srcdir/prepare/conf/online.conf;
+fi
+
+mkdir -p $dir/log
+[[ -d $sdata && $data/feats.scp -ot $sdata ]] || split_data.sh $data $nj || exit 1;
+echo $nj > $dir/num_jobs
+
+for f in $online_config $srcdir/prepare/${iter}.mdl \
+    $graphdir/HCLG.fst $graphdir/words.txt $data/wav.scp; do
+  if [ ! -f $f ]; then
+    echo "$0: no such file $f"
+    exit 1;
+  fi
+done
+
+if ! $per_utt; then
+  spk2utt_rspecifier="ark:online/work/spk2utt"
+else
+  mkdir -p $dir/per_utt
+  for j in $(seq $nj); do
+    awk '{print $1, $1}' <$sdata/$j/utt2spk >$dir/per_utt/utt2spk.$j || exit 1;
+  done
+  spk2utt_rspecifier="ark:$dir/per_utt/utt2spk.JOB"
+fi
+
+  wav_rspecifier="scp,p:online/work/input.scp"
+
+if [ "$silence_weight" != "1.0" ]; then
+  silphones=$(cat $graphdir/phones/silence.csl) || exit 1
+  silence_weighting_opts="--ivector-silence-weighting.max-state-duration=$max_state_duration --ivector-silence-weighting.silence_phones=$silphones --ivector-silence-weighting.silence-weight=$silence_weight"
+else
+  silence_weighting_opts=
+fi
+
+
+if [ "$post_decode_acwt" == 1.0 ]; then
+  lat_wspecifier="ark:|gzip -c >$dir/lat.JOB.gz"
+else
+  lat_wspecifier="ark:|lattice-scale --acoustic-scale=$post_decode_acwt ark:- ark:- | gzip -c >$dir/lat.JOB.gz"
+fi
+
+
+if [ -f $srcdir/frame_subsampling_factor ]; then
+  # e.g. for 'chain' systems
+  frame_subsampling_opt="--frame-subsampling-factor=$(cat $srcdir/frame_subsampling_factor)"
+fi
+
+if [ $stage -le 0 ]; then
+  $cmd JOB=1:$nj $dir/log/decode.JOB.log \
+    online2-wav-nnet3-latgen-faster $silence_weighting_opts --do-endpointing=$do_endpointing \
+    --frames-per-chunk=$frames_per_chunk \
+    --extra-left-context-initial=$extra_left_context_initial \
+    --online=$online \
+       $frame_subsampling_opt \
+     --config=$online_config \
+     --min-active=$min_active --max-active=$max_active --beam=$beam --lattice-beam=$lattice_beam \
+     --acoustic-scale=$acwt --word-symbol-table=$graphdir/words.txt \
+     $srcdir/prepare/${iter}.mdl $graphdir/HCLG.fst $spk2utt_rspecifier "$wav_rspecifier" \
+      "$lat_wspecifier" || exit 1;
+fi
+
+if ! $skip_scoring ; then
+  [ ! -x local/score.sh ] && \
+    echo "Not scoring because local/score.sh does not exist or not executable." && exit 1;
+  local/score.sh --cmd "$cmd" $scoring_opts $data $graphdir $dir
+fi
 
 exit 0;

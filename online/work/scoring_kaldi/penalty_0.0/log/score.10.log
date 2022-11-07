@@ -1,0 +1,5 @@
+# cat online/work/scoring_kaldi/penalty_0.0/10.txt | compute-wer --text --mode=present ark:online/work/scoring_kaldi/test_filt.txt ark,p:- >& online/work/wer_10_0.0 
+# Started at Mon Nov  7 20:28:36 CST 2022
+#
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon Nov  7 20:28:36 CST 2022, elapsed time 0 seconds

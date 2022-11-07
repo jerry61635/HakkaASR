@@ -1,0 +1,4 @@
+compute-wer --text --mode=present ark:online/work/scoring_kaldi/test_filt.chars.txt ark,p:- 
+%WER 6.43 [ 11 / 171, 0 ins, 11 del, 0 sub ] [PARTIAL]
+%SER 80.00 [ 4 / 5 ]
+Scored 5 sentences, 4608 not present in hyp.

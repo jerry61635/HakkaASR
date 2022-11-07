@@ -1,0 +1,20 @@
+lbk03_063 ref  ia31  an31  giu31  se55  teu11  go55  do24  hoi55  ngai11  mo11  han11  a55  din24  din24  no31  zon31
+lbk03_063 hyp   ***  an31  giu31  se55  teu11  go55  do24  hoi55  ngai11  mo11  han11  a55  din24  din24  no31  zon31
+lbk03_063 op     D     C     C      C     C      C     C     C       C      C     C     C     C      C      C     C  
+lbk03_063 #csid 15 0 0 1
+lbk03_065 ref  iang24  xien55  sog2  sai55  zau24  e11  oi55  su24  qiu24  hi31  loi11  m11  ho31  diau55  a55  ti24  li11  ba24  hong55  din11  din11  din55  din55
+lbk03_065 hyp  iang24  xien55  sog2  sai55  zau24  e11  oi55  su24  qiu24  hi31  loi11  m11  ho31  diau55  a55   ***  li11  ba24  hong55  din11  din11  din55  din55
+lbk03_065 op      C       C      C     C      C     C     C     C     C      C     C     C     C      C     C     D     C     C      C      C      C      C      C  
+lbk03_065 #csid 22 0 0 1
+lbk03_066 ref  i11  tung11  mai24  gui24  loi11  ge55  fung24  lin11  diau55  ti24  vug2  iam11  ha24  iu24  fung24  ge55  sii11  jied2  din24  din24  dong11  dong11  han11  he55  ho31  tang24
+lbk03_066 hyp  i11  tung11  mai24  gui24  loi11  ge55  fung24  lin11  diau55  ti24  vug2  iam11  ha24  iu24  fung24  ge55  sii11  jied2   ***   din24  dong11  dong11  han11  he55  ho31  tang24
+lbk03_066 op    C      C      C      C      C      C      C      C       C      C     C     C      C     C      C      C     C      C      D      C       C       C      C      C     C      C  
+lbk03_066 #csid 25 0 0 1
+lbk03_067 ref  ng11   ***   kiung55  kuai55  loi11  ten55  su31  sung31  ia31  ca24  e31  ngai11  voi55  din31  m11  iang11  e11
+lbk03_067 hyp  ng11  den24  kiung55  kuai55  loi11  ten55  su31  sung31   ***  ca24  e31  ngai11  voi55  din31  m11  iang11  e11
+lbk03_067 op     C     I       C        C      C      C      C      C      D     C    C      C      C      C     C      C     C 
+lbk03_067 #csid 15 0 1 1
+lbk03_068 ref  ia31  bai31  ge55  li31  hang11  ho31  siid5  iu55  ho31  gau31  zam31  man11  din31  ngian55
+lbk03_068 hyp  ia31  bai31  ge55  li31  hang11  ho31  siid5  iu55  ho31  gau31  zam31  man11  din31  ngian55
+lbk03_068 op     C     C      C     C      C      C     C      C     C     C      C      C      C       C   
+lbk03_068 #csid 14 0 0 0
