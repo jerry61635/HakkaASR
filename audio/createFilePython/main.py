@@ -29,7 +29,8 @@ for line in Sentence:
                 wordChk=False
                 break
         if wordChk:
-            Lexicon.append(word)
+            if len(word)>0:
+                Lexicon.append(word)
 
 '''
 L=0
