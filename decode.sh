@@ -35,13 +35,15 @@ decode_dir=online/work
 
 #以此執行bash >> ./decode.sh exp/chain/tdnn_1d_sp/graph/ data/train online/work
 
+echo "Run: ./decode.sh exp/chain/tdnn_1d_sp/graph/ data/train online/work"
+
 echo "$0 $@"  # Print the command line for logging
 
 [ -f ./path.sh ] && . ./path.sh; # source the path.
 . parse_options.sh || exit 1;
 
 echo "Prepare online decode settings and data"
-./online_prepare.sh
+local/online_prepare.sh
 rm $decode_dir/input.scp $decode_dir/spk2utt
 mkdir -p $decode_dir
 # make an input .scp file
@@ -135,6 +137,26 @@ if [ -f $srcdir/frame_subsampling_factor ]; then
 fi
 
 if [ $stage -le 0 ]; then
+  echo ""
+  echo "--prepare decode lang L.fst G.fst--"
+  echo ""
+  lang_own=online/prepare/lang
+  lang_own_tmp=data/local/lang_own_tmp/   # Temporary directory.
+  utils/prepare_lang.sh \
+    --phone-symbol-table data/lang/phones.txt --position-dependent-phones false \
+    data/local/dict "<UNK>" $lang_own_tmp $lang_own
+  
+  utils/format_lm.sh $lang_own data/local/lm/3gram-mincount/lm_unpruned.gz \
+      data/local/dict/lexicon.txt online/prepare/lang_decode || exit 1;
+
+  graph_own_dir=$model_dir/graph_own
+  utils/mkgraph.sh online/prepare/lang_decode exp/chain/tdnn_1d_sp online/prepare/graph || exit 1;
+fi
+
+if [ $stage -le 1 ]; then
+  echo ""
+  echo "-----------GO DECODING-----------"
+  echo ""
   $cmd JOB=1:$nj $dir/log/decode.JOB.log \
     online2-wav-nnet3-latgen-faster $silence_weighting_opts --do-endpointing=$do_endpointing \
     --frames-per-chunk=$frames_per_chunk \
@@ -144,14 +166,20 @@ if [ $stage -le 0 ]; then
      --config=$online_config \
      --min-active=$min_active --max-active=$max_active --beam=$beam --lattice-beam=$lattice_beam \
      --acoustic-scale=$acwt --word-symbol-table=$graphdir/words.txt \
-     $srcdir/prepare/${iter}.mdl $graphdir/HCLG.fst $spk2utt_rspecifier "$wav_rspecifier" \
+     $srcdir/prepare/${iter}.mdl online/prepare/graph/HCLG.fst $spk2utt_rspecifier "$wav_rspecifier" \
       "$lat_wspecifier" || exit 1;
+  echo ""
+  echo "----------Done DECODING----------"
+  echo ""
 fi
 
-if ! $skip_scoring ; then
-  [ ! -x local/score.sh ] && \
-    echo "Not scoring because local/score.sh does not exist or not executable." && exit 1;
-  local/score.sh --cmd "$cmd" $scoring_opts $data $graphdir $dir
+if [ $stage -le 2 ]; then
+  echo ""
+  echo "------------Scoring------------"
+  echo ""
+  if ! $skip_scoring ; then
+    local/score_kaldi.sh --cmd "$cmd" $scoring_opts $data $graphdir $dir
+  fi
 fi
 
 exit 0;

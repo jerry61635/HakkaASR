@@ -1,6 +1,6 @@
 # cat online/work/scoring_kaldi/wer_details/per_utt | utils/scoring/wer_ops_details.pl --special-symbol '***' | sort -b -i -k 1,1 -k 4,4rn -k 2,2 -k 3,3 > online/work/scoring_kaldi/wer_details/ops 
-# Started at Mon Nov  7 20:28:37 CST 2022
+# Started at Wed Nov  9 16:22:26 CST 2022
 #
 utils/scoring/wer_ops_details.pl: Note: handling as utf-8 text
 # Accounting: time=0 threads=1
-# Ended (code 0) at Mon Nov  7 20:28:37 CST 2022, elapsed time 0 seconds
+# Ended (code 0) at Wed Nov  9 16:22:26 CST 2022, elapsed time 0 seconds

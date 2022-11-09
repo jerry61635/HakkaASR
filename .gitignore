@@ -1,5 +1,7 @@
 audio/HakkaAudioFile
 audio/test
 audio/train
+online/online-data/audio
+data
 exp
 mfcc*

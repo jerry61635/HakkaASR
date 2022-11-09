@@ -1,32 +1,14 @@
 # lattice-scale --inv-acoustic-scale=16 "ark:gunzip -c online/work/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- | lattice-best-path --word-symbol-table=exp/chain/tdnn_1d_sp/graph//words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/chain/tdnn_1d_sp/graph//words.txt | local/wer_hyp_filter > online/work/scoring_kaldi/penalty_0.5/16.txt 
-# Started at Mon Nov  7 20:28:36 CST 2022
+# Started at Wed Nov  9 16:22:25 CST 2022
 #
 lattice-scale --inv-acoustic-scale=16 'ark:gunzip -c online/work/lat.*.gz|' ark:- 
-lattice-best-path --word-symbol-table=exp/chain/tdnn_1d_sp/graph//words.txt ark:- ark,t:- 
 lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- 
-LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:99) For utterance lbk03_060, best cost 979.743 + -261.139 = 718.604 over 1235 frames.
-lbk03_060 teu11 bai31 ge55 tai55 gim24 sam24 oi55 xien24 iung55 ziim24 xien55 din55 kieu55 kang24 kieu55 e31 nang55 m11 voi55 sung24 hed2 lod2 ha24 loi11 
-LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:99) For utterance lbk03_061, best cost 822.94 + -214.808 = 608.133 over 1018 frames.
-lbk03_061 ng11 ia31 deu24 man55 fa55 su24 qiu24 hi31 loi11 kong55 a55 su24 zog2 e31 hong55 m11 ho31 ti24 ia31 e24 ha24 din55 vi55 
-LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:99) For utterance lbk03_062, best cost 891.195 + -237.097 = 654.098 over 1129 frames.
-lbk03_062 i11 ia31 gung24 sii24 qin55 fai31 qim11 ngai11 ti24 ia31 din24 ian11 qim11 id2 liong31 siib5 fun24 zung24 han11 qim11 m11 do31 
-LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:99) For utterance lbk03_063, best cost 541.443 + -146.244 = 395.199 over 681 frames.
-lbk03_063 an31 giu31 se55 teu11 goi55 do24 hoi55 ngai11 mo11 han11 a55 din24 din24 no31 zon31 
-LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:99) For utterance lbk03_064, best cost 611.941 + -170.77 = 441.171 over 787 frames.
-lbk03_064 ge55 ngin11 m11 di24 zo55 ma31 ge55 ne24 gui24 ngid2 e31 ti24 ia31 din24 song24 din24 ha24 
-LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:99) For utterance lbk03_065, best cost 745.502 + -201.822 = 543.68 over 924 frames.
-lbk03_065 iang24 xien55 sog2 sai55 zau24 e11 oi55 su24 qiu24 hi31 loi11 m11 ho31 diau55 a55 li11 ba24 hong55 din11 din55 din55 
-LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:99) For utterance lbk03_066, best cost 884.667 + -239.687 = 644.98 over 1086 frames.
-lbk03_066 i11 tung11 mai24 gui24 loi11 ge55 fung24 lin11 diau55 ti24 vug2 iam11 ha24 iu24 fung24 ge55 sii11 jied2 din24 dong11 dong11 han11 he55 ho31 tang24 
-LOG (lattice-scale[5.5.1049~1-4592c5]:main():lattice-scale.cc:107) Done 10 lattices.
-LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:99) For utterance lbk03_067, best cost 573.067 + -142.709 = 430.358 over 732 frames.
-lbk03_067 ng11 den24 kiung55 kuai55 loi11 ten55 su31 ca24 e31 ngai11 voi55 din31 e11 
-LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:99) For utterance lbk03_068, best cost 536.749 + -145.764 = 390.985 over 672 frames.
-lbk03_068 teu11 bai31 ge55 li31 hang11 ho31 siid5 iu55 ho31 gau31 zam31 man11 din31 ngian55 
-LOG (lattice-add-penalty[5.5.1049~1-4592c5]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 10 lattices.
-LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:99) For utterance lbk03_069, best cost 487.783 + -140.595 = 347.188 over 629 frames.
-lbk03_069 zo55 sii55 zo55 m11 ded2 do55 can24 he55 mo11 voi55 bun24 ngin11 nau24 
-LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:124) Overall cost per frame is 0.581851 = 0.795573 [graph] + -0.213723 [acoustic] over 8893 frames.
-LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:128) Done 10 lattices, failed for 0
+lattice-best-path --word-symbol-table=exp/chain/tdnn_1d_sp/graph//words.txt ark:- ark,t:- 
+LOG (lattice-scale[5.5.1049~1-4592c5]:main():lattice-scale.cc:107) Done 1 lattices.
+LOG (lattice-add-penalty[5.5.1049~1-4592c5]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 1 lattices.
+LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:99) For utterance c-11-176, best cost 71.161 + -50.8699 = 20.2911 over 514 frames.
+c-11-176 fong11 den31 zoi55 su55 
+LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:124) Overall cost per frame is 0.0394769 = 0.138445 [graph] + -0.0989686 [acoustic] over 514 frames.
+LOG (lattice-best-path[5.5.1049~1-4592c5]:main():lattice-best-path.cc:128) Done 1 lattices, failed for 0
 # Accounting: time=0 threads=1
-# Ended (code 0) at Mon Nov  7 20:28:36 CST 2022, elapsed time 0 seconds
+# Ended (code 0) at Wed Nov  9 16:22:25 CST 2022, elapsed time 0 seconds
