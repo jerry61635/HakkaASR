@@ -1,6 +1,0 @@
---feature-type=mfcc
---mfcc-config=/home/hanasay/kaldi/egs/hakka/online/prepare/conf/mfcc.conf
---ivector-extraction-config=/home/hanasay/kaldi/egs/hakka/online/prepare/conf/ivector_extractor.conf
---add-pitch=true
---online-pitch-config=/home/hanasay/kaldi/egs/hakka/online/prepare/conf/online_pitch.conf
---endpoint.silence-phones=1:2

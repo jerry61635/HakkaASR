@@ -2,6 +2,8 @@ audio/HakkaAudioFile
 audio/test
 audio/train
 online/online-data/audio
+online/work
+online/prepare
 data
 exp
 mfcc*

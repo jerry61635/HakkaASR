@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-./prepare_online_decoding.sh \
+rm -rf online/prepare
+local/prepare_online_decoding.sh \
 	--feature-type mfcc \
 	--add-pitch true \
 	data/lang_chain \

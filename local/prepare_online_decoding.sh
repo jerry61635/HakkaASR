@@ -136,7 +136,7 @@ echo "--feature-type=$feature_type" >>$conf
 
 case "$feature_type" in
   mfcc)
-    echo "--mfcc-config=$dir/conf/mfcc.conf" >>$conf
+    echo "--mfcc-config=$dir/conf/mfcc_hires.conf" >>$conf
     cp $mfcc_config $dir/conf/mfcc_hires.conf || exit 1;;
   plp)
     echo "--plp-config=$dir/conf/plp.conf" >>$conf
