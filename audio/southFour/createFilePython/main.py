@@ -48,7 +48,7 @@ for line in Sentence:
         output = output+' '+word
     export.write(output[1:]+'\n')
 export.close()
-shutil.copyfile('./output/corpus.txt','../../data/local/corpus.txt')
+shutil.copyfile('./output/corpus.txt','../../../data/local/corpus.txt')
 
 # export text.no_oov (for lm)
 print('export text.no_oov')
@@ -59,7 +59,7 @@ for line in Sentence:
         output = output+' '+word
     export.write(output[1:]+'\n')
 export.close()
-shutil.copyfile('./output/text.no_oov','../../data/local/lm/text.no_oov')
+shutil.copyfile('./output/text.no_oov','../../../data/local/lm/text.no_oov')
 
 # export train/test_text
 p=0.4 #比例
@@ -72,19 +72,19 @@ for line in Sentence:
         export.write(line+'\n')
         for i in range (4,15):
             if Sentence[L][i] == ' ':
-                shutil.copyfile('../HakkaAudioFile/'+Sentence[L][0:i]+'.wav','../train/'+Sentence[L][0:i]+'.wav')
+                shutil.copyfile('../HakkaAudioFile/'+Sentence[L][0:i]+'.wav','../../train/'+Sentence[L][0:i]+'.wav')
                 break
     else:
         export2.write(line+'\n')
         for i in range (4,15):
             if Sentence[L][i] == ' ':
-                shutil.copyfile('../HakkaAudioFile/'+Sentence[L][0:i]+'.wav','../test/'+Sentence[L][0:i]+'.wav')
+                shutil.copyfile('../HakkaAudioFile/'+Sentence[L][0:i]+'.wav','../../test/'+Sentence[L][0:i]+'.wav')
                 break
     L+=1
 export.close()
 export2.close()
-shutil.copyfile('./output/text_train','../../data/train/text')
-shutil.copyfile('./output/text_test','../../data/test/text')
+shutil.copyfile('./output/text_train','../../../data/train/text')
+shutil.copyfile('./output/text_test','../../../data/test/text')
 
 # export lexicon.txt
 print('export Lexicon')
@@ -95,7 +95,7 @@ for L in Lexicon:
         output=output+' '+syl
     export.write(output+'\n')
 export.close()
-shutil.copyfile('./output/lexicon.txt','../Language/lexicon.txt')
+shutil.copyfile('./output/lexicon.txt','../../Language/lexicon.txt')
 
 # export nonsilence_phones.txt
 print('nonsilence_phones.txt')
