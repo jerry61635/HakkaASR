@@ -57,18 +57,14 @@ siin24 ti31 giam31 ca11 oi55 cu24 hied2
 fun55 do24 e31 god2 do31
 su31 gin31 cud2 hied2
 siin24 ti31 giam31 ca11 oi55 cu24 hied2
-i24 ien55 di55 ca24 teu11 fu55 kiun55
-i24 ien55 di55 ca24 teu11 fu55 kiun55
 zo55 fu55 sii55
 oi55 iu24 nai55 xim24
 hi55 i24 ien55 gua55 ho55
 oi55 gi55 ded2 siid5 iog55 e31
 a24 me24 hon11 do31
-hi55 iok5 fong11 gab2 iog55 e31
 ia31 coi55 mo11 xied5 iog55 e31
 zo55 ded2 on24 xim24 siid5
 a24 me24 dung55 cog5
-hi55 iok5 fong11 gab2 iog55 e31
 ia31 coi55 mo11 sa55 iog55 e31
 zo55 ded2 on24 xim24 siid5
 mo11 soi55 bau31 voi55 dug2 mug2 soi55
@@ -714,11 +710,10 @@ dun24 bu31
 dun24 xi55 vud5 tong24
 gi11 kon55 do31 lo55 cu31
 hem24 do55 tai55 ma11 sang24
-su31 gi24 e31 fai55 te2 qiu55 von55 go55	
-mog5 go55 zong24 gi11 liet5
-te2 han11 he55 mo11	
+su31 gi24 e31 fai55 te2 qiu55 von55 go55
+te2 han11 he55 mo11
 zong24 gi11 zo55 ma31 ge55
-su31 gi24 e31 fai31 hed2 qiu55 von55 go55	
+su31 gi24 e31 fai31 hed2 qiu55 von55 go55
 mog5 go55 zong24 gi11 e31
 gin24 go55 id2 bai31 ca24 fo55
 gi11 sa55 bien55 do55 cong11 don31 giog2
@@ -903,9 +898,7 @@ ia31 mun55 ti11 i55 tai55 tiau11
 n11 iu24 ma31 ge55 fong24 fab2
 ia31 mun55 ti11 qin55 tai55 tiau11
 n11 iu24 ma31 ge55 fong24 fab2
-iu24 go24 tiet2 heu55
 gau24 tung24 i55 li55 pien55
-iu24 go24 tiet2 heu55
 gau24 tung24 qin55 fong24 pien55
 gi11 he55 hi55 xiong55 fong24 mien55 ge55 zon24 ga24
 ho31 ded2 iu24 fu55 do31 ia31 biong24 ca24
@@ -921,7 +914,6 @@ fu31 gua24 siid5 hi31 loi11 goi55 fu31
 fung11 sed2
 ia31 he55 ga31 iog55 e31
 voi55 siid5 fai55 ngin11
-id2 liang24 gam24 e31 sed2 ge55 gap2 e31
 gieu31 e31 zeu31 dong24 giag2
 n11 nai55 zeu31 ded2 gi11 iang11
 giag2 a11 hi55 tug55 su24
@@ -1150,7 +1142,6 @@ ia31 zu24 ngiug2 dong24 pi11
 a24 ba24 ka55 m11 hau55
 an31 giu31 mo11 kon55 do31 gi11
 iu24 ka55 pi11 e31
-a24 me24 iung55 pi11 tong24 bo24 lo11 pet5 tong24
 ia31 zu24 ngiug2 goi55 pi11
 a24 ba24 go55 m11 hau55
 an31 giu31 mo11 kon55 do31 gi11
@@ -1170,7 +1161,6 @@ m11 giang24 ngin11 gong31
 zog2 go55 pun24 deu24 e31
 ng11 e31 he55 qi24
 qin31 cai31 liau55 li24 me55 ho31 sii5
-hog5 gau31 qia11 dui55 mien55 iu24 id2 gien24 xi24 iok5 diam55
 coi55 dong24 do24
 qin31 cai31 n11 siid5
 coi55 goi55 do24
@@ -1267,9 +1257,7 @@ zo55 ded2 gong31 go55 xiong11 se55 deu24 e31 mo11
 a24 me24 tung11 dung24 xi24 pai11 do55 zang55 zang55
 sam24 mo11 sai55 zau24
 mia24 hi31 loi11 han11 siib2 siib2
-lo11 pet5 xi24 sai55 do55 zau24 zau24
 qiu55 zo55 ded2 su24 hi31 loi11 le24
-lo11 pet5 xi24 sai55 do55 zau24 zau24
 qiu55 zo55 ded2 su24 hi31 loi11 e31
 gia24 sii55 xia31 do55 an31 ze31
 mo11 ngin11 kon55 ded2 siid2
@@ -1369,7 +1357,6 @@ tang24 gong31 n11 cog5 tai55 jiong31
 iu24 iang31 mo11
 ha55 li24 bai55 oi55 koi24 fi55
 a24 li55 dong24 iu24 li24 mau55
-kon55 do31 ngin11 qiu55 fvoi55 hem24 ngin11
 a24 li55 goi55 iu24 li24 mau55
 kon55 do31 ngin11 qiu55 voi55 hem24 ngin11
 gi11 da31 ban31 e31 qiang31 lin11 sa55 siid5
@@ -1483,7 +1470,7 @@ biang55 so55 gien24 fong11
 qin24 gied2 fong11 gien24
 mog5 se55 ngi55 o24
 biang31 e31 qid2 ga24 na24 loi11 siid5
-fai55 tai11 le24	
+fai55 tai11 le24
 mo11 dai55 do31 bid2
 fai55 tai11 e31
 mo11 dai55 do31 bid2
@@ -1498,7 +1485,7 @@ fung24 cai24 go55 heu55
 coi55 gin31 loi11 gin31 gui55
 ia31 con24 tang24 tang24 gong31 dong24 go24 kib2
 oi55 hi55 siid5 kon55 a11 mo11
-ia31	 con24 tang24 tang24 gong31 qin55 go24 gib2
+ia31 con24 tang24 tang24 gong31 qin55 go24 gib2
 oi55 hi55 siid5 kon55 a11 mo11
 cud2 mun11 oi55 gi55 ded2 dai55 su31 gi24 e31 tung11 qien11
 id2 san55 cung24 mun11
@@ -1555,7 +1542,7 @@ a24 me24 di55 iog5 tong11 se31 siin24
 iung55 zu24 iu11 cau31 coi55 ka55 hiong24
 siid5 zai24 ge55 ngin11 iung55 fo31 iu11 cau31 coi55
 mog5 siid5 an31 iu11
-dui55 siin24 ti31 ka55 ho31	
+dui55 siin24 ti31 ka55 ho31
 iung55 zu24 iu11 cau31 coi55 go55 hiong24
 mog5 siid5 an31 iu11
 dui55 siin24 ti31 go24 ho31
@@ -1575,8 +1562,6 @@ ngia24 fu55 ngiong31 lan55 do55 an31 tai55 kung24
 ngia24 fu55 ngiong31 lan55 do55 an31 tai55 kung24
 oi55 do24 siid5 gun31 sui31
 mog5 gin31 siid5 liong11 sui31
-id2 sung24 mat2 e31
-id2 sung24 mat2 e31
 ngi11 iu24 pi55 do31 ma31 ge55 mi55 mo11
 a24 me24 bo24 ge55 kong55 ngiug31 mi55 dong24 hiong24
 mo11 zu31 ma31 ge55 coi55
@@ -1632,7 +1617,7 @@ ngid2 e31 go55 do55 goi55 mo11 han11
 ngid2 e31 cun24 mo11 gi31 giu31
 ng11 sii11 oi55 giag2 a11 zun31 pi55
 ngied5 tien24 ngid2 e31 go55 cong11
-liug2 diam55 han11 gong24 gong24	
+liug2 diam55 han11 gong24 gong24
 hag2 ga24 ngin11 di55 qiang24 miang11 voi55 da31 ngie55 ban31
 a24 po11 zeu24 siin11 teu11 voi55 lug2 ngiu11 nen55 siid5
 a24 me24 hi55 zu24 diam24 mai24 moi11 tiau11 ngiug2
@@ -2677,7 +2662,6 @@ gi11 hon11 do31
 siin24 ti31 m11 cii55 ien11
 gi11 dung55 do31
 siin24 ti31 m11 cii55 ien11
-lo31 tai24 mien55 gap2 lon31 hong55 ngiam11 den31 fan55 sam31
 gi11 ia31 he55 lo31 mo24 piang55
 ho31 do24 ngien11 e31
 mug2 mi11 mo24 van24 van24
@@ -2715,7 +2699,7 @@ ien55 hong55 iu24 goi55 do24 piang55 ngin11
 nga24 giang31 gin24 pien24 do31
 tin24 tung24 qiu55 m11 ded2
 gia24 giog2 pien24 do31
-gui24 ban55 ge55 ngied5 kia11 ku55 cong31 e31	
+gui24 ban55 ge55 ngied5 kia11 ku55 cong31 e31
 gia24 giog2 pien24 do31
 gui24 ban55 ge55 ngied5 ku55 den31 cong31 e31
 qid2 teu11 died2 do55 vu24 qiang24
@@ -2764,7 +2748,7 @@ gi11 m11 di24 ngiong31 e11 ho31 diam24 diam24 sa55 zung55 fung24
 giog2 zung31 zung31
 zeu24 siin11 mo11 giug2 do31 ca24
 gi11 id2 du31 sii31 au55 nau55
-zeu24 siin11 mo11 giug2 do31	 ca24
+zeu24 siin11 mo11 giug2 do31 ca24
 gi11 id2 du31 sii31 au55 cau55
 gieu55 do55 dong24 bi24 song24
 gieu55 do55 goi55 bi24 song24
@@ -2905,7 +2889,7 @@ m11 ho31 siid5
 du55 ngai11 in55 xiong55 di24 boi55
 gi11 dui55 ngin11 goi55 ho31
 xim24 du31 siib55 fun24 iu24 song24
-n11 ia31	 zung31 xiong31 fab2
+n11 ia31 zung31 xiong31 fab2
 ngai11 mo11 fab2 tu55 jiab2 su55
 qiang31 n11 go55 kau31 li55 i2 ha55 e31
 dung24 xi24 oi55 kiang55 xiag2 sii31 iung55
@@ -3052,7 +3036,6 @@ ka55 vun31
 n11 sii11 oi55 ban24 ho31 se55 loi11
 ban24 den31 ia31
 go55 vun31
-hi55 tien11 hong55 bang24 lo11 pet5 e31
 gi11 bun24 zai55 vu55 bed2 do55 mo11 lu55 ho31 hang11
 gi11 bun24 zai55 vu55 bed2 a11 mo11 lu55 ho31 hang11
 ben55 den31 soi55
@@ -3331,7 +3314,6 @@ du55 min11 zong55 di24 du31 pad5 mun24 e31
 du55 min11 zong55 di24 boi55 pad5 mun24 e31
 giag2 a11 loi11 ten55 pad2 fo31
 pad2 sui31 pad2 do55 ti55 nai11 hong55
-pau11 lo11 pet5 pi11
 pau11 coi55 gua24
 pau11 biong24 e31
 xi24 gua24 dui55 ban55 po55
@@ -3424,7 +3406,6 @@ pu11 to11 oi55 iu24 in11 iong24
 gien24 fong11 qiong55 gieu31 deu55 iong55 e31
 heu11 e31 dong24 jin24
 heu11 e31 goi55 jin24
-log5 to11 zo55 ded2 du55 sa24 mok2 zoi55 dung24 xi24
 xiong55 e31 ge55 pi55 gung24 cong11 cong11
 sii24 e31 dong24 og2
 sii24 e31 goi55 og2
@@ -3433,9 +3414,7 @@ tien24 mang11 gong24 qiu55 tang24 do31 gie11 tai11
 tien24 m11 cen11 gong24 qiu55 tang24 do31 gie11 tai11
 vug2 iam11 diau24 tien24 dang31 bi24
 vo11 bid2 e31 tien24 dang31 bi24
-a24 ba24 teu11 bai31 iu24 du55 vug2 dang31 hiug2 ngied5 gap2 e31
-a24 ba24 teu11 bai31 iu24 du55 vug2 dang31 hiug2 ngied5 gap2 e31
-ien55 e31 	di55 vug2 iam11 ha24 zo55 deu55
+ien55 e31 di55 vug2 iam11 ha24 zo55 deu55
 ien55 e31 di55 vug2 iam11 teu11 ha24 zo55 deu55
 bi24 tong11 du31 iu24 ngo11 e31
 bi24 tong11 hong55 iu24 ngo11 e31
@@ -3504,25 +3483,19 @@ ti55 kiu11 hong55 iu24 qid2 tai55 pien31 tai55 liug5
 qiu55 he55 qid2 tai55 zu24
 ti55 kiu11 hong55 iu24 qid2 tai55 pien31 tai55 liug5
 qiu55 he55 qid2 tai55 zu24
-9 2 1 ti55 tung24 dong24 ieu11
-9 2 1 ti55 tung24 qin55 ieu11
 toi11 van11 iu24 dong24 do24 zung31 ti55 hin11
 toi11 van11 iu24 goi55 do24 zung31 ti55 hin11
 ti55 kiu11 non24 fa55
 vu24 tien24 am55 ti55
 qiong55 voi55 log5 i31 iong55 e31
 fung24 te2 tai55
-lap5 zug2 fo31 vu24 te2 le24
 fung24 te2 tai55
-lap5 zug2 fo31 vu24 fud5 e31
 tien24 sii11 bien55 fa55 an31 tai55
 am55 bu24 teu11 vun24 tu55 ga24 i55 dai24 e31
 tien24 sii11 bien55 fa55 an31 tai55
 am55 bu24 teu11 vun24 tu55 ga24 goi55 dai24 e31
 id2 ngien11 iu24 xi55 gui55
 lang24 fung24 dui55 xi24 bed2 pien31 coi24 go55 loi11
-ia31 su55 dang31 ge55 bat2 e31 m11 di24 xiug2 mang11
-ia31 su55 dang31 ge55 la24 bat2 e31 m11 di24 xiug2 e31 mo11
 tai55 i31 log5 mo11 tin11
 giang24 pa55 voi55 zo55 tai55 sui31
 ngiu11 ngien31 zang55 da31 zii31
@@ -3605,8 +3578,6 @@ gie55 vag55 zang55 m11 voi55 jin55 hang11
 ced5 e31 qiu55 he55 gi11
 qiu55 he55 iu24 n11 ia31 zung31 ngin11
 gie55 vag55 zang55 m11 voi55 jin55 hang11
-ia31 iok5 pin31 san31 sen24 dong24 do24 mun55 ti11
-ia31 iok5 pin31 san31 sen24 goi55 do24 mun55 ti11
 do24 iung55 ca11 gu24 se31 su31 zang55 voi55 seu24 mied5 piang55 tug5
 ngib5 do55 xin24 fan11 gin55 oi55 tin55 tin55 e31 sii2 in55
 gong31 m11 voi55 sod5
@@ -3673,7 +3644,7 @@ a24 ji31 gien24 hong55 ge55 sam24 cu11
 sam24 zong24 a11 man24 man24
 ia55 sii55 e31 mai55 ge55 fug5 zong24 ga55 sii55 ka55 pien11 ngi11
 ia55 sii55 e31 mai55 ge55 fug5 zong24 ga55 sii55 go55 pien11 ngi11
-fa24 sam24 e31	gag2 ngiu11 e31 fu55 qin55 sii11 hang11
+fa24 sam24 e31 gag2 ngiu11 e31 fu55 qin55 sii11 hang11
 ge55 se55 ngin11 e31 lai24 den31 gia24 me24 ge55 sam24 mi24
 ge55 se55 ngin11 e31 bang24 den31 gia24 me24 ge55 sam24 mi24
 sam24 fu55 oi55 lang11 di55 zug2 go24 hong55
@@ -3775,7 +3746,6 @@ ia31 ha55 dong24 do24 vu24 xim24 siid5 pin31
 ia31 ha55 goi55 do24 vu24 xim24 siid5 pin31
 lang11 dab5 mog5 siid5 ted2 do24
 sod2 fan24 su11 qiam24
-am55 bu24 ia55 a24 me24 bo24 lo11 pet5 tong24
 lang24 sui31 mog5 siid5
 voi55 o24 li55 du31
 sui31 an31 seu24
@@ -3858,7 +3828,7 @@ a24 po11 voi55 po11 tiam11 ban31 bun24 tai55 ga24 siid5
 po11 coi55 dong24 hiong24
 po11 coi55 goi55 hiong24
 bad2 ngied5 ban55 poi55 ngiug2
-ia31 gi31 ngid2 an31 	 log5 i31
+ia31 gi31 ngid2 an31 log5 i31
 sam24 mo11 poi55 m11 voi55 zau24
 bad2 ngied5 ban55 hang24 ngiug2
 ia31 gi31 ngid2 gin31 log5 i31
@@ -3894,11 +3864,11 @@ gi11 ia31 sa11 ngin11 ka55 bo31 su31
 gi11 ia31 ge55 ngin11 go55 bo31 su31
 coi55 pu31 dong24 ca31 fan55
 coi55 pu31 goi55 ca31 fan55
-ca24 m11 do24 voi55	siid5 ted2 le24
+ca24 m11 do24 voi55 siid5 ted2 le24
 liong31 sa11 sang24 do55 ca24 m11 do24
 an31 m11 tang24 gong31
 ka55 ca24 m11 do24 deu24 e31
-ca24 m11 do24 voi55	 siid5 hed2 e31
+ca24 m11 do24 voi55 siid5 hed2 e31
 liong31 ge55 ngin11 sang24 a11 ca24 m11 do24
 an31 m11 tang24 gong31
 go55 ca24 m11 do24 deu24 e31
@@ -4012,7 +3982,6 @@ diam55 hong55 iu24 mai55 gog2 siid2 gog2 iong55 ge55 fu55
 ia31 sii11 mo11 an31 goi24 zo55
 mog5 lau31 do31 an31 gien31 dan24
 ia31 sii11 mo11 an31 iung11 i55 zo55
-mog5 gok2 do31 an31 gien31 dan24
 gia24 gon24 ngiam55 han11 dong24 con11 tung31
 gia24 gon24 ngiam55 han11 goi55 con11 tung31
 ia31 gong31 fab2 ngai11 m11 siid2 tang24 go55
@@ -4092,7 +4061,6 @@ pi11 iong24 he55 mo11
 bun24 mun24 e31 diau24 do31 goi55 iong24
 coi55 pu31 dog5 do55 iu55 iu55 e31 zang55 bau24 zung55 e31
 coi55 pu31 dog5 a11 iu55 iu55 e31 zang55 bau24 zung55 e31
-ia31 siid5 cug5 ge55 iok5 sui31 qin55 iu24 hau31
 gia24 ng31 pen11 iu24 iu24 diam31 i55 do24
 gia24 ng31 pen11 iu24 iu24 diam31 goi55 do24
 gi11 liong31 ji31 moi55 qin55 iu24 hau55
@@ -4108,7 +4076,6 @@ ngai11 iun31 giu31 gi55 ded2 ngia24 en24 qin11
 ngai11 iun31 ien31 gi55 ded2 ngia24 en24 qin11
 lau24 gug2 iun11 koi24 loi11 sai55
 tung11 gug2 iun11 koi24 loi11 sai55
-iok5 toi55 e31 heu55 boi55 iu24 xia31 iung55 fab31
 ma31 ge55 qiu55 m11 giang24
 sii5 cai55 iung31 gam31
 ziim24 e31 jiam24 jiam24
@@ -4233,9 +4200,7 @@ ngiong31 voi55 an31 mo11 ngien31 gong24 tog5 do31 ia31 zag2
 ngiong31 voi55 an31 mo11 ngien31 gong24 tog5 do31 ia31 zag2
 n11 mo11 gong31 ngien11 in24 ngai11 ngiong31 voi55 di24
 n11 mo11 gong31 ngien11 in24 ngai11 ngiong31 voi55 di24
-lap5 zug2 pun11 vu24 le24
 giag2 a11 hi31 sam24 zag2 ngien55 mong55
-lap5 zug2 pun11 vu24 e31
 giag2 a11 hi31 sam24 ge55 ngien55 mong55
 ngin11 gien24 man24 nai55 e31 iu24 vun24 qin11
 ngin11 gien24 id2 nai55 e31 iu24 vun24 qin11
@@ -4244,9 +4209,7 @@ siin24 ti31 goi55 ngiog5
 zu24 cong11 cau31 do55 ngiun55 ngiun55
 zu24 cong11 cau31 a11 ngiun55 ngiun55
 ia31 hab5 e31 ngoi55 hin11 m11 jiang24
-gi11 giuk2 do55 ngong55 ngong55
 tai55 ngong55 gu31
-gi11 giuk2 a11 ngong55 ngong55
 ge55 ge55 xi55 a24 go24 e31 kon55 hi31 loi11 i55 ngong55 mien55
 ge55 ge55 xi55 a24 go24 e31 kon55 hi31 loi11 goi55 ngong55 mien55
 ia31 bun31 su24 mo11 ma31 ge55 nui55 iung11
@@ -4371,7 +4334,6 @@ ngied5 tien24 siid5 ben24 teu55 xim24 liong11
 ia31 ha55 ti31 li5 m11 bi31 heu55 sang24 sii11 le24
 ia31 ha55 ti31 li5 m11 bi31 heu55 sang24 sii11 e31
 gi11 tiau24 sii55 gong31 bun24 ngin11 tang24 ge55
-gi11 tit2 sii55 gong31 bun24 ngin11 tang24 ge55
 gi11 zo55 ngin11 tiau11 ciid5
 iu24 jia55 tin55 cog5 voi55 van11
 gi11 zo55 ngin11 ngang55 ciid5
@@ -4452,9 +4414,6 @@ m11 ho31 lau31 do31 he55 gong31 seu55 ge55
 gi11 o31
 ziin55 gin24 he55 goi55 iu24 li24 mau55
 ngai11 sii11 tung11 n11 gong31 ziin55 gin24 ge55
-m11 ho31 gok2 do31 he55 gong31 seu55 ge55
-ia31 iok5 coi11 dong24 ziin24 gui55
-ia31 iok5 coi11 goi55 ziin24 gui55
 ia31 gam31 he55 ziin24 sii5 ge55
 gia24 zo55 fab31 qin55 ded2 ngin11 nau24
 ge55 iog55 e31 iu24 ma31 ge55 zog31 iung55
@@ -4550,8 +4509,6 @@ liong31 zag2 gued2 ga24 xiong24 cii11
 xiau24 ted2 dong24 do24 ngin11
 liong31 ge55 gued2 ga24 xiong24 cii11
 xi31 hed2 goi55 do24 ngin11
-ia31 gien24 kiu55 vug2 cag2 ted2 oi55 iung55 za55 iok5
-ia31 gien24 kiu55 vug2 cag2 hed2 oi55 iung55 za55 iok5
 ia31 deu24 he55 zeu31 sii24 ge55 tug5 pin31
 mia24 m11 ded2
 sii11 toi55 mo11 kiung55 iong55 e31
@@ -4867,7 +4824,6 @@ fo31 fong11 tai55
 sug2 bag2 ji31 moi55 qiu55 mo11 pan55 fab2 sii2 teu55
 nga24 sug2 me24 voi55 liug2 siib5 se55 e31
 han11 ten11 ngin11 hi55 cam24 ga24
-tiet2 ngin11 sam24 hong55
 bi31 soi55
 a2 iun11 bag2 ge55 sun24 e31 zang55 tug55 seu31 hog5 id2 ngien11
 gi11 dag2 ngid2 qiu55 hi55 hog5 gau31 mun11 heu31 den31 gi11 biong55 zon31
@@ -5025,7 +4981,7 @@ ia31 teu11 lu55 m11 he55 gien55 ngin11 qiu55 zo55 ded2 ge55
 ia31 teu11 lu55 m11 he55 gien55 ngin11 qiu55 zo55 ded2 ge55
 gien24 du31 iu24 lo55 cu31 e31
 lo31 moi55 hag2 do55 gin31 gieu55
-gien24 du31 iu24 lo55 cu31 e31	
+gien24 du31 iu24 lo55 cu31 e31
 lo31 moi55 hag2 a11 gin31 gieu55
 zo55 ma31 ge55 gin31 gin31 oi55 zeu31
 gog2 hong55 bien31 kon55 a11
@@ -5354,13 +5310,9 @@ oi55 mai24 coi55 sa55 mo11 dai55 do31 qien11
 ngai11 iu55 m11 siid2 hi55 go55
 sa55 voi55 di24 oi55 dai55 ma31 ge55
 ia31 pien31 ge55 co31 e11 ngai11 god2 ca24 m11 do24 le24
-siuk5 den31 qiu55 gau24 bun24 n11 su24 mi24
-ia31 pien31 ge55 co31 e11 ngai11 god2 ca24 m11 do24 e31 	
-siuk5 den31 qiu55 gau24 bun24 n11 su24 mi24
+ia31 pien31 ge55 co31 e11 ngai11 god2 ca24 m11 do24 e31
 n11 lau24 von31 su24 qiu24
-siuk5 su31 se31 se31 a11
 n11 tung11 von31 su24 qiu24
-siuk5 su31 se31 se31 a11
 mai55 vu24 xim24 iu11 ge55 sen24 li24 ngin11
 sii5 cai55 he55 hoi55 xi31 ngin11
 zang55 an31 do24 e31 tin55 tin55
@@ -5442,7 +5394,6 @@ co24 lun11 son11 go55 giu31
 ma24 teu11 tin11 dong24 do24 son11 e31
 ma24 teu11 tin11 goi55 do24 son11 e31
 gim24 bu24 ngid2 ngai11 su24 do31 id2 zong24 min11 xin55 pien31
-ngib5 gin55 su31 siuk5
 toi11 van11 ge55 ngin11 kieu31 iu24 liong31 qien24 sam24 bag2 van55
 ngui11 hiam31 ge55 vi55 so31 voi55 iu24 gin31 go55 peu24 ngi24
 sad2 id2 toi11 gi24 hi55 di55 ia31
@@ -5546,8 +5497,6 @@ zo55 nau55 ngied5 oi55 qiang31 siin11
 qiang24 miang11 oi55 gua55 zii31
 iung55 sam24 sen24 bai55 a24 gung24 po11
 gien55 bai31 gi11 died2 qiu55 voi55 siin55 gau55
-ia31 co55 siin55 zit2 tin11 he55 gu31 zit2
-ia31 co55 xiag2 sii55 tin11 he55 gu31 zit2
 tien24 con24 ngid2 oi55 liau55 tien24 con24
 a24 go24 xin55 tien24 zu31 gau55
 ge55 zag2 gieu31 e31 bun24 ca24 e31 cong55 xiau24 ted2 le24
@@ -5585,7 +5534,6 @@ qiang24 sed2 ge55 co31 piang11 hong55
 kon55 ded2 do31 koi24 se55 se55 lui24 e31 vong11 fa24 ge55 ia24 fu31 mag2
 fu5 go31 ge55 go31 zii31 sang24 loi11 qiong55 fud5 zu31 ge55 teu11 hin11
 kon55 hi31 loi11 i55 zong24 ngiam11
-siit2 ga24 e31 ge55 go31 zii31 sang24 loi11 qiong55 fud5 zu31 ge55 teu11 hin11
 kon55 hi31 loi11 qin55 zong24 ngiam11
 bo24 gie24 tong24 ga24 gam24 gi31
 tong24 teu11 ka55 tiam11
@@ -5603,7 +5551,6 @@ gim24 ngien11 qin24 iun11 so31 zung31 ge55 gie55 lam11 coi55 goi55 jiang24
 id2 vug2 ga24 ngin11 siid5 a11 goi55 fung24 iung31
 hag2 ngin11 ham11 zung55 qin55 guan55 iung55 gieu31 giong24 iab5
 siid5 hi31 loi11 iu24 id2 zung31 tid5 pied5 ge55 hiong24 hi55
-a24 so31 cau31 cap5 coi55 iung55 fung11 lo11 ped5
 ma24 lang11 su11
 ho11 lan11 teu55
 sed2 hiong24 mi55 ce11 qion11
@@ -5612,7 +5559,6 @@ i55 do24 ngin11 ho31 sii5
 iung55 iu11 po11 ge55 koi24 fa24 teu55 su24 gag2 hiong24
 qin55 do24 ngin11 ho31 sii5
 guai31 xi24 zo55 ded2 kien55 hiong24
-me55 zo55 ded2 zo55 iok5
 sii55 cong11 hong55 iu24 ngin11 mai55 zu31 sug5 ge55 iong11 gog2 e31
 se55 ngin11 e31 kon55 do55 gin31 tun24 heu31 lan24 sui31
 sii55 cong11 hong55 iu24 ngin11 mai55 zu31 sug5 ge55 lin11 gog2
@@ -5626,7 +5572,7 @@ iu24 fung11 iu24 vu24
 han11 nau55 nai55
 lu55 sun11 ge55 teu11 iam11 son24 e31 su55 hong55 da31 do55 man24 man24 ge55 iam11 son24 e31
 iu24 fung11 iu24 vu24
-han11 nau55 nai55	
+han11 nau55 nai55
 a24 gung24 iung55 fa24 pun11 e31 zung55 id2 teu11 pu11 iung11
 foi24 pag5 ge55 iab5 e31
 me55 he55 id2 pun11 pun11 gin31
@@ -5685,8 +5631,6 @@ koi24 fa24
 da31 zii31
 ce55 do55 nai55 e31 qiu55 he55
 teu55 fu55 teu11 zo55 ded2 bun24 zu24 e31 siid5
-zung24 iok5 ge55 zii31 ho11 ca24 qiu55 he55 bau24 i24 zo55 ge55
-zung24 iok5 ge55 zii31 ho11 ca24 qiu55 he55 bau24 i24 zo55 ge55
 bug2 nui55 na24 loi11 cau31 dong24 ho31 sii5
 bug2 nui55 na24 loi11 cau31 goi55 ho31 sii5
 gong31 ge55 zung31 fa55
@@ -5763,17 +5707,13 @@ meu55 teu11 diau24 oi55 am55 bu24 teu11 zang55 voi55 cud2 loi11 log31 sii5
 meu55 teu11 diau24 oi55 am55 bu24 teu11 zang55 voi55 cud2 loi11 log31 sii5
 cun24 tien24 ge55 sii11
 gang24 zung55 ngin11 id2 zo55 tien11
-pag5 hok5 e31 qiu55 voi55 ten11 do55 heu55 boi55 loi11 siid5 cung11 e31
 cun24 tien24 ge55 sii11
 gang24 zung55 ngin11 id2 zo55 tien11
-pag5 hok5 e31 qiu55 voi55 ten11 do55 heu55 boi55 loi11 siid5 cung11 hien31
 a24 jiu11 jien55 voi55 da31 ieu55 po11
 me55 jiab5 song11 ki24 du55 ngiu11 boi55 dang31
 a24 jiu11 jien55 voi55 da31 ieu55 po11
 me55 jiab5 song11 ki24 du55 ngiu11 boi55 dang31
-ban24 gieu24 e31 tung11 ngied5 gap2 e31 ca24 m11 do24 tai55
 i55 do24 ngin11 mo11 fun24 ped5
-ban24 gieu24 e31 tung11 ngied5 gap2 e31 ca24 m11 do24 tai55
 qin55 do24 ngin11 mo11 fun24 ped5
 pid5 po11 e31 qiong55 voi55 bi24 ge55 lo55 cu31
 gieu31 ma11 sa11 pi11 pi11 gim24 gim24
@@ -5806,10 +5746,8 @@ liong31 pi11 id5 piang11 tai55
 se55 ngin11 e31 voi55 iung55 xien55 tung11 zug2 sun31 gu24 ge55 pi55 gung24 gong11 tag2 den31 biong55 bi31 bi24
 qiang24 coi55 iab5 e31 bun24 gim24 gu24 e31 siid5 do55 id2 kung24 id2 kung24 e31
 qiang24 coi55 iab5 e31 bun24 gim24 gu24 e31 siid5 a11 id2 kung24 id2 kung24 e31
-in24 zen24 pun55 nung11 iok5
 cu11 co31 ji55 ge55 guan24 he55
 fo31 iam55 cung11 sa55 i55 seu31 kon55 do31 e31
-in24 zen24 pun55 nung11 iok5
 cu11 co31 ji55 ge55 guan24 he55
 fo31 ngiam11 cung11 sa55 qin55 seu31 kon55 do31 e31
 tai55 teu11 gieu31 se55 mong31 se55
@@ -6025,7 +5963,6 @@ gi11 ge55 gam24 e31 ien11 di55 teu11 qien11 ge55 san24 au24 ge55 jiag2 e31
 san24 dung31 biang55 tai55 i31 go55 heu55
 san24 fa24 sui31 qiu55 bien55 do55 iu55 tai55 iu55 vun11
 san24 dung31 biang55 tai55 i31 go55 heu55
-pag5 hok5 sui31 qiu55 bien55 a11 iu55 tai55 iu55 vun11
 ia31 bau24 ti55 seb31 oi55 giag2 giag2 na24 hi55 deb5
 he55 mo11 giang24 pa55 voi55 sang24 cung11 e31
 ia31 bau24 ti55 seb31 oi55 kiung55 kuai55 na24 hi55 diu24
@@ -6099,11 +6036,9 @@ ia31 zam55 e31 gin31 log5 tai55 i31
 co55 siin11 qin55 do24 san24 e31 hang11 san24
 qin55 ngui11 hiam31
 zon31 hon11 le24
-ga24 liang24 gap2 e31
 mo11
 hon11 do31 sii11 mo11 gad2 mo11 sad2
 zon31 hon11 e31
-ga24 liang24 gap2 e31
 mo11
 dung55 do31 sii11 mo11 gad2 mo11 sad2
 go24 sug2 gung24 lu55 dag2 ton55 iu24 jiab31 heu31
@@ -6114,9 +6049,7 @@ tai55 sui31 id2 go55 qiu55 oi55 hi55 ngiam24 tai55 sui31 ceu11 loi11 seu24
 han11 mo11 nga31 sii11 ge55 ha55
 tai55 sui31 id2 go55 qiu55 oi55 hi55 ngiam24 tai55 sui31 ceu11 loi11 seu24
 hang11 san24 lu55 oi55 ka55 se55 ngi55 deu24 e31
-na55 he55 died2 log5 san24 lak2 du31 ge55 qiu55 fai55 le24 io24
 hang11 san24 lu55 oi55 go55 se55 ngi55 id2 xid2
-na55 he55 died2 log5 san24 lak2 du31 ge55 qiu55 fai55 le24 io24
 da31 gieu31 qiu55 m11 cud2 mun11 ge55 tien24 sii11
 n11 ngiong31 voi55 nung55 den31 loi11
 da31 gieu31 qiu55 m11 cud2 mun11 ge55 tien24 sii11
@@ -6220,7 +6153,6 @@ sii5 cai55 m11 in55 goi24
 a24 go24 iung55 sui31 iung55 tien55 qin55 ho24 song31
 mo11 bo31 fu55 ti55 kiu11
 sii5 cai55 m11 in55 goi24
-lo11 pet5 xi24 oi55 iun11 koi24 loi11 sai55
 mo11 sii24 sai55 m11 voi55 zau24
 mog5 ki24 an31 sun11
 hoi31 sui31 voi55 iung31 hi31 loi11
@@ -6415,13 +6347,7 @@ zu31 fan55 ge55 ha55
 fo31 te2 lad2 voi55 gied2 lad2
 iung55 mag5 gon31 man55 man55 e31 zod5 sui31 ka55 m11 voi55 gang31 do31
 iung55 mag5 gon31 man55 man55 e31 jiod5 sui31 go55 m11 voi55 gang31 do31
-ge55 liab5 bat5 e31 qin55 pun24 ngiug2
-bat5 e31 in11 dong24 seu31
-ge55 liab5 la24 bat5 e31 qin55 pun24 ngiug2
-la24 bat5 e31 in11 dong24 seu31
-ga31 lam31 fud5 he55 zung24 iok5 cai11
 zo55 ded2 seu24 zung31 zii31 tung55
-lam31 e31 fud5 he55 zung24 iok5 cai11
 zo55 ded2 seu24 zung31 zii31 tung55
 a24 po11 dui55 dog5 gie11 pan11 dong24 iu24 gin24 ngiam55
 qiang31 ngin11 hag2 sii11
@@ -6453,7 +6379,6 @@ he55 gau24 hog5 sang24 e31 ngiab2 coi55 bau24 loi11 gie31 sod2 hag2 ga24 vun11 f
 hau31 go31 qin55 ho31 o24
 ham11 son24 tiam11 he55 moi11 e31 li31 e31
 to11 e31 den31 den31 jien55 tong11 zo55 cud2 loi11 ge55
-iu24 deu24 iok5 co31 sai55 zau24
 zo55 ded2 jim55 jiu31
 ia31 kong55 ngiug31 dong24 hiong24
 qiang55 fan55 lo24 mi55 siid5
@@ -6629,7 +6554,6 @@ teu11 bai31 a24 gung24 han11 coi24 ge55 sii11 jied2
 jiab5 song11 iung55 sag5 zung24 kiu24 zung24 qi11 ba24 e31 siid5
 teu11 bai31 a24 gung24 han11 coi24 ge55 sii11 jied2
 jiab5 song11 iung55 sag5 mi31 kiu24 zung24 qi11 ba24 e31 siid5
-ia31 ge55 mug2 xiong55 iung55 cok5 kung24 deu55 sun31 ge55 fong24 siid2 zo55 ga24 ki31
 qion11 m11 sii31 iung55 do31 tie2 dang24 e31
 ia31 zag2 tien55 kiu11 e31 seu24 ted2 le24
 n11 zo55 ded2 ten55 su31 von55 mo11
@@ -6733,11 +6657,8 @@ ha24 ko55 ge55 sii11 jied2
 se55 ngin11 e31 voi55 ieu24 pan24 loi11 da31 nen55 zu24 e31
 hi55 na24 kieu55 e31 lau24 ia31 sag5 gu31 kieu55 koi24 loi11
 hi55 na24 kieu55 e31 tung11 ia31 tai55 sag5 teu11 kieu55 koi24 loi11
-fai31 tung11 fai31 tiet2 oi55 xien24 ziin31 li24 ho31 se55
 zang55 ho31 gau24 bun24 qin24 gied2 cui55 zii24 ngien11 fi11 su24
-fai31 tung11 fai31 tiet2 oi55 xien24 ziin31 li24 ho31 se55
 zang55 ho31 gau24 bun24 qin24 gied2 cui55 zii24 ngien11 fi11 su24
-tiet2 e31 ge55 dung24 xi24
 giu31 e31 qiu55 voi55 sang24 lu24
 id2 kiun11 ngin11 long11 long11 san55
 xiong31 xib5 hab5 mo11 bi11 bi55 e31 ho31 pun11
@@ -6762,10 +6683,8 @@ gi11 con55 ziim24 su31 gin31 zun24
 xien55 kien55 m11 ded2 go55
 pai55 teu11 cai55 ngin11 giug5
 iu24 ngin11 zog2 cong11 fu55
-fu55 nong55 dai31 qien31 do55 sii55 vut2 deu31 kon55 hien55 hien55
 pai55 teu11 cai55 ngin11 giug5
 iu24 ngin11 zog2 cong11 fu55
-fu55 nong55 dai31 qien31 a11 sii55 vut2 deu31 kon55 hien55 hien55
 xi24 zong24 fu55 oi55 gag2 siin24
 ieu24 e31 oi55 xien24 liong11
 kon55 fu55 teu11 iu24 gi31 fa2
@@ -6871,7 +6790,6 @@ teu11 bai31 kai24 ceu11
 oi55 iung55 gong55 e31 loi11 kai24 ka55 vun31 dong55
 teu11 bai31 kai24 ceu11
 oi55 iung55 gong55 e31 loi11 kai24 go55 vun31 dong55
-oi55 xiog2 lo11 pet5 e31 loi11 zu31
 hi55 na24 gua24 pau11 e31 loi11 xiog2
 gi11 giog2 boi31 do31
 oi55 kia11 ku55 cong31 e31 zang55 hang11 ded2 vun31
@@ -6964,7 +6882,6 @@ ia31 ha55 di55 vug2 ha24 nung55 sun24 e31
 gi11 kiu55 ngien11 tui55 hiu24 e31
 ia31 ha55 di55 vug2 ha24 nung55 sun24 e31
 n11 tung11 a24 gung24 pan11 sui31
-sun55 siuk5 kuan55 do55 iog5 tong11 hong55
 teu11 bai31 ge55 ngin11 iung55 pu11 sog5 ieu31 sui31
 dong24 fan11 bo31
 teu11 bai31 ge55 ngin11 iung55 pu11 sog5 ieu31 sui31
@@ -7005,9 +6922,7 @@ lo31 moi55 kia11 den31 vo11 liam11 e31 hi55 coi55 ien11 god2 kuai55 coi55
 zog2 bu55 xien24 vun55 sui31 zang55 hi55 cud5 zog2 e31
 zog2 bu55 xien24 vun55 sui31 zang55 hi55 cud5 zog2 e31
 ia31 zog2 e31 mo11 piang11
-na24 zong24 zii31 bag2 e31 loi11 siap2 zog2 giog2
 ia31 zog2 e31 mo11 piang11
-na24 zong24 zii31 biong24 e31 loi11 siap2 zog2 giog2
 go55 ngien11 vug2 ha24 tai55 biang55 so55
 a24 ji31 na24 sui31 gon31 dui55 den31 cung24 mun11 xiab5 sui31
 go55 ngien11 vug2 ha24 tai55 biang55 so55
@@ -7058,9 +6973,7 @@ ngin11 hag2 loi11 e31
 hi55 da31 mun11 bun24 ngin11 ngib5
 lug5 tong24 qi11 he55 vong24 bai31 sii55 tien11 sii11 cong11 gien24 siid5 ge55 diam31 xim24
 lug5 tong24 qi11 he55 nung55 bai31 sii55 tien11 sii11 bud2 sii11 siid5 ge55 diam31 xim24
- vu24 gied2  ge55 vog55 teu11
 bun24 a24 me24 lu55 do55 lang55 lang55
- vu24 gied2  ge55 vog55 teu11
 bun24 a24 me24 lu55 do55 gim24 gim24
 gi11 zo55 ngiab5 vu55
 id2 nai55 e31 qim11 hag2 fu55
@@ -7093,10 +7006,8 @@ a24 qin24 bag2 gim24 ngien11 ge55 iun55 sii55 mo11 qin55 ho31
 tai55 tai55 se55 se55 ge55 sii55 qin11 lien11 ngo11 jiab2 dung55 jiab2 den31 loi11
 med2 do55 gi11 teu11 na11 goi55 tung55
 pi55 sui31 liu11 liu11 liu11 liu11
-ia31 lo11 pet5 e31 te2 go55 bang24
 zu31 tong24 siid5 do31 lo31 lo31
 iu24 bu55 le24
-ia31 lo11 pet5 e31 te2 go55 bang24
 zu31 tong24 siid5 do31 lo31 lo31
 iu24 bu55 e31
 xin24 sang24 gong31 gi11
@@ -7119,7 +7030,7 @@ oi55 se55 ngi55
 gung24 ngin11 ied2 tai55 lu55
 m11 du31 ho31 tung11 sui31 gon31 ied2 ton24 te2
 gung24 ngin11 ied2 tai55 lu55
-m11 du31 ho31 tung11 sui31 gon31 ied27 7ton24 hed27
+m11 du31 ho31 tung11 sui31 gon31 ied27 ton24 hed27
 ia31 ha55 m11 he55 sii11 jied2
 xi24 gua24 mo11 gi31 ho31 sii5
 hag31 fa55 oi55 iu24 ngin11 gong31
@@ -7132,7 +7043,6 @@ n11 go55 an31 e11 man55 so11 so11 e31
 den31 ha55 voi55 fu55 m11 cog5 ca24 biong24
 zo55 sii55 qin11 mog5 an31 man55 ban31
 oi55 giag2 deu24 e31
-ia3 so31 cai55 vong24 bai31 iu24 man24 san24 man24 piang11 ia24 sang24 ge55 lid5 e31 su55
 ia31 su31 gi24 e31 dong55 mau11
 liong31 ha55 ban55 qiu55 fai31 te2
 ia31 su31 gi24 e31 qin55 mau11
@@ -7145,9 +7055,7 @@ du31 gi24 han11 oi55 gien31 siid5
 ziin55 gin24 miang55 jiang24
 ien55 miang55 vai24
 ge55 zag2 heu55 sang24 ngin11 gong31 gi11 m11 ded2
-i2 ha55 e31 qiu55 mien55  mien55 fe31
 ge55 ge55 heu55 sang24 ngin11 gong31 gi11 m11 ded2
-i2 ha55 e31 qiu55 mien55  mien55 fe31
 se55 ngin11 e31 zag2 zag2 hiug2 do55 pi11 zud2 zud2 e31
 ia31 pan11 zu24 ngiug2 pi11 zud2 zud2 e31
 se55 ngin11 e31 m11 gam31 siid5
@@ -7281,7 +7189,6 @@ gon24 qien11 gu55 heu55 zang55 to11 dong55
 zo55 ma31 ge55 sii55 qin11 du55 oi55 xiong31 teu11 xiong31 mi24
 gon24 qien11 gu55 heu55 zang55 to11 dong55
 ia31 gi24 do24 ma11 tun55 tun55
-刴 ceu11 m11 ton24
 iu24 la55 fai31 sii31
 fu11 qiu24 e31 vad5 tiu55 tiu55 e31
 qin55 nan11 zog2 ded2 hed5
@@ -7295,12 +7202,11 @@ nai11 lu55 vad5 liu55 liu55 e31
 hang11 lu55 oi55 se55 ngi55
 gi11 cud2 se55 du55 van55 fu55 ga24 tin11
 ngid2 ngid2 siid5 ng11 siid5 ngiug2
-zeu24 zeu24 soi55 do55 ngid2 teu11 sai55 sii55 vut2	
 ia31 tiau11 lu55 van24 van24 vad2 vad2
 m11 di24 teu55 do55 nai55 hi55
 zo55 ngin11 m11 ho31 te2 vang11
 he55 gien55 ngin11 qion11 sam31 n11 qiong55 giang24 gui31 iong55 e31
-ge55 qiu55 gien55 seu55 e31 nai55	
+ge55 qiu55 gien55 seu55 e31 nai55
 cam24 xiong11 sii55 qin11 oi55 gong31 to55 li24
 he55 vang11 vang11 kia11
 tin55 cog5 m11 voi55 iu24 gied2 go31
@@ -7344,7 +7250,7 @@ xi5 ba31 e11 kioi55
 a24 min11 zog2 ge55 xi24 zong24 xin24 cung55 cung55 e31
 a24 min11 zog2 ge55 xi24 zong24 xin24 cung55 cung55 e31
 nga24 gung24 bad2 siib5 liug2 e31
-siin24 ti31 han11 qin55 zab2 zen55	
+siin24 ti31 han11 qin55 zab2 zen55
 gia24 hag31 fa55 he55 tung11 gia24 po11 hog5 ge55
 gong31 do55 dong24 zang55 ban31
 gia24 hag31 fa55 he55 tung11 gia24 po11 hog5 ge55
@@ -7388,10 +7294,8 @@ qiang31 ngin11 hag2 siid5 diam31 xim24 ge55 qi11 ba24 e31 iung55 zung24 kiu24 zu
 gi11 to31 xim24 kiu24
 qiang31 ngin11 hag2 siid5 diam31 xim24 ge55 qi11 ba24 e31 iung55 zung24 kiu24 zung24 a11 ngib5 ngion24
 gi11 xiong31 do31 siin24 hong55 han11 ba11 den31  ge55 zai55 vu55
-dag2 ngid2 qiu55 ngiak2 gied2 gied2 e31
 seu55 m11 cud2 loi11
 gi11 xiong31 do31 siin24 hong55 van11 ba11 den31 ge55 zai55 vu55
-mi24 ngid2 qiu55 ngiak2 gied2 gied2 e31
 nag2 m11 cud2 loi11
 a24 min11 go24 ge55 lai55 e31 sang24 loi11 go24 liu55 go24 liu55 e31
 kon55 hi31 loi11 i55 sii24 vun11
@@ -7487,7 +7391,6 @@ do55 gim24 m11 cen11 gui24
 he55 sia55 hi55 nai55
 a24 me24 dong24 dong24 di55 ge55 zu31 fan55
 go55 ng31 fun24 zung24 zang55 da31 loi11 zo55 ded2 mo11
-a24 me24 fan55 zu31 tong31 tit2
 go55 ng31 fun24 zung24 zang55 da31 loi11 zo55 ded2 mo11
 tien24 gong24 ngid2 m11 sii31 song24 ban24
 n11 zo55 n11 fong55 se55 gu31 soi55
@@ -7539,3 +7442,100 @@ teu55 iu11 ang24 e31 ge55 heu31 oi55 mien55 hiong55 song24
 teu55 iu11 zang24 m11 voi55 do31 cud2 loi11
 m11 ho31 gin31 hiong55 ngai11 ia31 pien31 cug5 la55
 hiong55 ped5 vi55 hi55
+zog2 e31 bai31 m11 cog5 hiong55 le24
+iu24 to24 xiong24 e31 ge55 pien31 oi55 hiong55 zon31 loi11 zang55 cog5
+zog2 e31 bai31 m11 cog5 hiong55 e31
+iu24 to24 xiong24 e31 ge55 pien31 oi55 hiong55 zon31 loi11 zang55 cog5
+ia31 dab55 e31 an31 o24 zo24
+n11 hi55 na24 so55 ba31 loi11 so55 so55 a11
+ia31 jiag2 e31 an31 o24 zo24
+n11 hi55 na24 so55 ba31 loi11 so55 so55 a11
+a24 gui55 dui55 ia31 pien31 teu11 qim11 do55 ge55 pien31 teu11
+kiung55 iong55 qim11 mo11
+ho31 tien24 sii11 bag2 song24 san24 dung31 dang31
+qiu55 zo55 ded2 kon55 ded2 do31 id2 sed2 qiang24 tien24 tung11 ien31 ien31 ge55 ho31 fung24 gin31
+ho31 tien24 sii11 bag2 song24 san24 dung31 dang31
+qiu11 zo55 ded2 kon55 ded2 do31 qiang24 tien24 gag2 tung11 ien31 ien31 ge55 ho31 fung24 gin31
+a24 go24 zo55 bin24 ge55 sii11 jied2
+sii2 di55 gim24 mun11 dai55 go24 id2 cam55 e31 sii11 gien24
+a24 go24 zo55 bin24 ge55 sii11 jied2
+sii2 di55 gim24 mun11 hed5 go24 id2 cam55 e31 sii11 gien24
+gia24 sam24 fu55 go11 do31 iu11 qid2
+med2 do55 lia31 i2 dab55 ge55 i2 dab55
+gia24 sam24 fu55 go11 do31 iu11 qid2
+med2 a11 lia31 id2 jiag2 ge55 id2 jiag2
+id2 ha55 ban55 ha55 ngiong55 gi11 mo11 ieu55 gin31
+tung11 gi11 da31 ngiag55 mien55 mo11 ka55 iang11
+bai31 ba31 e31 ngiong55 gi11 mo11 ieu55 gin31
+tung11 gi11 da31 ngiag55 mien55 mo11 go24 iang11
+gia24 ngin11 sen24 id2 lu55 li24 loi11 du55 dong24 sun55 xi55
+m11 dan24 qiang55 tug55 su24
+teu11 lu55 me55 he55
+gia24 ngin11 sen24 id2 lu55 li24 loi11 du55 goi55 sun55 xi55
+m11 dan24 qiang55 tug55 su24
+teu11 lu55 me55 he55
+m11 ho31 id2 ngid2 do55 am55 zong31 den31 tien55 sii55
+mug2 zu24 voi55 kon55 fai31 te2
+m11 ho31 id2 ngid2 do55 am55 zong31 den31 tien55 sii55
+mug2 zu24 voi55 kon55 fai31 hed2
+hag2 ngin11 zu31 siid5 id2 den31 kiang55
+cau31 ge55 cau31 ngiug2 id2 den31 ho31 sii5
+hag2 ngin11 zu31 siid5 id2 den31 biag2
+cau31 ge55 cau31 ngiug2 id2 den31 ho31 sii5
+siid5 zu55 go55 heu55 mang11 iu24 id2 kied2 sii11
+han11 bau31 zong55 bau31 zong55
+ma31 ge55 qiu55 m11 xiong31 siid5
+siid5 zu55 go55 heu55 m11 cen11 iu24 id2 kied2 sii11
+han11 bau31 du31 bau31 du31
+ma31 ge55 qiu55 m11 xiong31 siid5
+gia24 zu31 song55 sii55 sii55 toi55 toi55 qiu55 id2 nai55 e31 koi24 san24 da31 na11
+ia31 tiau11 ho11 ba55 dui55 sui31 teu11 do55 sui31 mi24
+gia24 zu31 song55 sii55 sii55 toi55 toi55 qiu55 id2 nai55 e31 koi24 san24 da31 na11
+ia31 tiau11 ho11 ba55 dui55 sui31 teu11 do55 sui31 mi24
+ia31 se55 ngin11 e31 qin55 man11 pi11
+id2 ngiab2 mug2 gi11 qiu55 sia55 hi55 tai55 lu55 hong55 e31
+ia31 se55 ngin11 e31 qin55 man11 pi11
+id2 sab2 mug2 gi11 qiu55 sia55 hi55 tai55 lu55 hong55 e31
+gia24 su31 ban31 m11 giag2
+i2 sii11 ban55 kied2 han11 zo55 m11 ho31
+gia24 su31 ban31 m11 giag2
+id2 ha55 ban55 ha55 han11 zo55 m11 ho31
+cud2 hi55 li24 hang11
+iu24 li24 mo11 li24
+ngai11 m11 sii31 se31 von31
+gien55 bai31 du55 an31 e11
+kib5 sii11 kib5 gib2 zang55 loi11 gin31 biang55 biang55 e31 gon31 gung24
+zo55 ded2 cud2 ma31 ge55 loi11
+gien55 bai31 du55 an31 e11
+kib5 sii11 kib5 gib2 zang55 loi11 lon55 gin31 gin31 e31 gon31 gung24
+zo55 ded2 cud2 ma31 ge55 loi11
+toi55 e31 di24 boi55 ge55 gam24 e31 kid5 do31 le24
+mu31 do55 mien11 mien11
+toi55 e31 di24 boi55 ge55 gam24 e31 ji24 do31 e31
+mu31 do55 mien11 mien11
+ia31 kien55 sii55 qin11 tai55 ga24 ki5 li5 loi11 da31 biang55
+zang55 voi55 siin11 gung24
+ia31 kien55 sii55 qin11 tai55 ga24 sa2 li5 gu31 loi11 da31 biang55
+zang55 voi55 siin11 gung24
+gia24 vug2 ha24 li11 ca24 teu11 kiun24 kiun24 e31
+hang11 lu55 m11 sii31 ng31 fun24 zung24
+kui24 ded2 iu24 n11 ten55 su31
+he55 mo11 ia31 se55 zo55 do55 am55 me55 han11 zo55 m11 te2
+ia31 bai31 ge55 sen24 li24 kui24 ded2 n11 ia31 zag2 lug2 sii31 gun55
+zang55 voi55 liau31 te2 an31 do24 qien11
+kui24 ded2 iu24 n11 ten55 su31
+he55 mo11 ia31 se55 zo55 do55 am55 me55 han11 zo55 m11 hed2
+ia31 bai31 ge55 sen24 li24 kui24 ded2 n11 ia31 zag2 lug2 sii31 gun55
+zang55 voi55 liau31 hed2 an31 do24 qien11
+gia24 xim24 kiu24 to31 ngib5 mun11 zang24 ng31 ngien11
+zeu24 siin11 ge55 fi55 ngi55
+koi24 sii31 ge55 ha55 mo11 kon55 do31 a24 vun11
+lim11 mi24 gi11 zang55 zeu31 den31 loi11
+zeu24 siin11 ge55 fi55 ngi55
+koi24 sii31 ge55 ha55 mo11 kon55 do31 a24 vun11
+a24 fug2 gu31 loi11 vug2 ha24 co24 gui24 zu55 bien24 e31
+lim11 jiong24 oi55 zeu31 e31
+zang24 gong31 xiong31 loi11 zeu24 bo31 hiam31
+a24 fug2 gu31 loi11 vug2 ha24 co24 gui24 zu55 bien24 e31
+lim11 jiong24 oi55 zeu31 e31
+zang24 gong31 xiong31 loi11 zeu24 bo31 hiam31

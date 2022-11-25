@@ -14,9 +14,9 @@ for i in range(7541):
 # for i in range(10):
     str=f.readline().split('\n')[0]
     chk=True
-    for w in noUse:
-        if w==str.split(' ')[0]:
-            chk=False
+    # for w in noUse:
+    #     if w==str.split(' ')[0]:
+    #         chk=False
     if chk:
         Sentence.append(str)
 f.close
