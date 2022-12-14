@@ -32,12 +32,10 @@ for line in Sentence:
             if len(word)>0:
                 Lexicon.append(word)
 
-'''
-L=0
+
 for line in Sentence:
-    print(Sentence[L])
-    L+=1
-'''
+    print(line)
+
 
 # export corpus.txt
 print('export corpus.txt')

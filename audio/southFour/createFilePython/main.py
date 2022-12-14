@@ -6,7 +6,7 @@ import shutil
 Sentence = []
 Lexicon = []
 
-noUse=['lbk13_001','lbk06_053','lbk01_079','lbk03_132','lbk04_059','lbk10_138']
+noUse=['north-lbk13_001','north-lbk06_053','north-lbk01_079','north-lbk03_132','north-lbk04_059','north-lbk10_138']
 
 #開啟檔案 7541為全部檔案數量
 f = open('nameAndText.txt', 'r', encoding='utf-8')
